@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/request_dialog_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/request_dialog_toolbar_title">
+
+            <CheckBox
+                android:id="@+id/request_dialog_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"/>
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/request_dialog_booking_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/pink_color"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/request_dialog_checkbox"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/request_dialog_prd_name_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:layout_toRightOf="@+id/request_dialog_booking_id"/>
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/request_dialog_prd_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/request_dialog_booking_id"
+                android:paddingRight="@dimen/margin_10"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/request_rider_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_wallet"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_below="@+id/request_dialog_relative"/>
+    </RelativeLayout>
+</layout>

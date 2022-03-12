@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/margin_10">
+
+    <CheckBox
+        android:id="@+id/add_service_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/custom_checkbox" />
+
+    <com.kamaii.partner.utils.CustomTextViewBold
+        android:id="@+id/add_service_name_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_toLeftOf="@+id/edt_s_price"
+        android:layout_toRightOf="@+id/add_service_checkbox"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_below="@+id/add_service_name_txt">
+
+        <RelativeLayout
+            android:id="@+id/add_max_item_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_service_name_txt"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toRightOf="@+id/add_service_checkbox"
+            android:orientation="horizontal">
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/max_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/edt_s_price"
+                android:text="@string/set_order_price"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <com.kamaii.partner.utils.CustomEditText
+                android:id="@+id/add_service_price"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/pad_15"
+                android:background="@drawable/edittext_underline"
+                android:gravity="center_horizontal"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:text=""
+                android:textColor="@color/pink_color"
+                android:textCursorDrawable="@color/dark_blue_color"
+                android:textSize="@dimen/text_size_16">
+
+            </com.kamaii.partner.utils.CustomEditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/vehicle_number_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+
+            <com.kamaii.partner.utils.CustomTextView
+                android:id="@+id/etvechial_number_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_20"
+                android:hint="@string/vehicle_number"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/dp_16" />
+
+
+            <com.kamaii.partner.utils.CustomEditText
+                android:id="@+id/vechial_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/etvechial_number_title"
+                android:hint="GJ 01 AB 1234"
+                android:inputType="textCapCharacters"
+                android:maxLength="13"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColorHint="@color/light_gray" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/maximum_qty_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_service_name_txt"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toRightOf="@+id/add_service_checkbox"
+            android:orientation="horizontal">
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/maximum_qty_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/edt_s_price"
+                android:text="@string/maximum_km_or_qty"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <com.kamaii.partner.utils.CustomEditText
+                android:id="@+id/max_qty_number"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/pad_15"
+                android:background="@drawable/edittext_underline"
+                android:gravity="center_horizontal"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:maxLength="5"
+                android:textColor="@color/pink_color"
+                android:textCursorDrawable="@color/dark_blue_color"
+                android:textSize="@dimen/text_size_16">
+
+            </com.kamaii.partner.utils.CustomEditText>
+        </RelativeLayout>
+
+        <com.kamaii.partner.utils.CustomTextView
+            android:id="@+id/add_prd_desdeep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_des"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/description"
+            android:textSize="14sp" />
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+            android:id="@+id/add_p_des"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_below="@+id/add_max_item_relative"
+            android:layout_margin="10dp"
+            android:drawableRight="@drawable/ic_drop_down"
+            android:gravity="center_vertical"
+            android:text="@string/select_description"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

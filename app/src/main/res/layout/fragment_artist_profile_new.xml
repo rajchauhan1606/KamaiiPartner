@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/artist_profile_new_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/pad_15">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/artist_profile_pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_user_placeholder"/>
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/artist_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sandeep Kumar"
+                android:textSize="@dimen/dp_16"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/dark_blue_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_service_edit"
+                    android:drawableTint="@color/white"
+                    android:padding="@dimen/margin_10"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="Edit Profile"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:background="@drawable/custom_blue_curverd_bg"/>
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:id="@+id/download_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:padding="@dimen/margin_10"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:drawableLeft="@drawable/ic_download_aggrement"
+                    android:gravity="center_vertical"
+                    android:text="Download Agreement"
+                    android:textColor="@color/blue_border_color"
+                    android:background="@drawable/blue_border_bg"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/artist_profile_new_linear"
+            android:background="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabSelectedTextColor="@color/colorPrimaryDark"
+            app:tabTextAppearance="@style/MineCustomTabText"
+            app:tabTextColor="@color/black" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </RelativeLayout>
+</layout>

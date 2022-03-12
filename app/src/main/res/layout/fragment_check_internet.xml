@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/no_internet" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentBottom="true"
+        tools:ignore="MissingConstraints">
+
+        <com.kamaii.partner.utils.CustomTextView
+            android:id="@+id/retry_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/no_internet_btn_bg"
+            android:paddingLeft="50dp"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:text="Retry"
+            android:layout_marginBottom="200dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

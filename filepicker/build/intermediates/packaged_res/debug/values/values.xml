@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="vw_BgItem">#353535</color>
+    <color name="vw_BgRv">#191919</color>
+    <color name="vw_BgRvFileDivider">#EEEEEE</color>
+    <color name="vw_BgToolBar">#373B3E</color>
+    <color name="vw_ShadowItem">#94333232</color>
+    <string name="vw_all">All</string>
+    <string name="vw_confirm">Done</string>
+    <string name="vw_no_audio_app">No audio App in this phone!</string>
+    <string name="vw_no_audio_play_app">No App exists for playing audio!</string>
+    <string name="vw_no_photo_app">No photo App in this phone!</string>
+    <string name="vw_no_video_app">No video App in this phone!</string>
+    <string name="vw_no_video_play_app">No App exists for playing video!</string>
+    <string name="vw_rationale_storage">Need Reading Storage Permission for Picking Files</string>
+    <string name="vw_up_to_max">Already up to max</string>
+    <style name="vw_FilePickerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="actionOverflowMenuStyle">@style/vw_OverflowMenuStyle</item>
+
+        <!-- RecyclerView -->
+        <item name="android:listDivider">@drawable/vw_divider_rv</item>
+    </style>
+    <style name="vw_OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">#000000</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+    </style>
+    <style name="vw_ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textSize">16sp</item> <!-- 字体大小 -->
+    </style>
+    <declare-styleable name="MaxHeightLayout">
+        <attr format="reference|float" name="mhl_HeightRatio"/>
+        <attr format="reference|dimension" name="mhl_HeightDimen"/>
+    </declare-styleable>
+</resources>

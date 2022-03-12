@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".ui.fragment.NewBookings">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rlSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="5dp">
+
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/svSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_back"
+                android:focusable="false"
+                app:defaultQueryHint="@string/search_by_cus"
+                app:iconifiedByDefault="false"
+                app:theme="@style/AppSearchView">
+
+
+            </androidx.appcompat.widget.SearchView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/newbook_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlSearch"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="2">
+
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/tvPendings"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/pendings"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/tvAccepted"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_line"
+                android:gravity="center"
+                android:text="@string/accepted"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/tvcurrent"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_line"
+                android:gravity="center"
+                android:text="@string/current"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/tvCompleted"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_line"
+                android:gravity="center"
+                android:text="@string/completed"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold">
+
+            </com.kamaii.partner.utils.CustomTextViewBold>
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+
+                android:id="@+id/tvRejected"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_line"
+                android:gravity="center"
+                android:text="@string/rejected"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/newbooking_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/newbook_linear">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rlSearch"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvBooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:nestedScrollingEnabled="false"/>
+
+                <ProgressBar
+                    android:id="@+id/idPBLoading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:id="@+id/old"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rvBooking"
+                    android:padding="@dimen/margin_10"
+                    android:visibility="gone"
+                    android:text="Old Booking" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvBookingOld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@+id/old"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+            android:id="@+id/tvNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_booking_found"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <com.kamaii.partner.utils.CustomTextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="25dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</layout>

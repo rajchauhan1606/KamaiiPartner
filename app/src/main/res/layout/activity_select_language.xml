@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/partner_language_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/action_bar_menus"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:src="@drawable/back"
+                android:tint="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.kamaii.partner.utils.CustomTextViewBold
+        android:id="@+id/select_lan_txt"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/text_size_20"
+        android:text="Select Your Language"
+        android:textColor="@color/dark_blue_color"
+        android:textSize="@dimen/pad_20" />
+
+    <LinearLayout
+        android:id="@+id/lin_123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_lan_txt"
+        android:layout_marginTop="@dimen/margin_10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/english_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/selected_drawable"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="@dimen/dimen_5dp"
+                    android:paddingRight="@dimen/dimen_5dp">
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:id="@+id/eng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_5dp"
+                        android:gravity="center_vertical"
+                        android:text="English"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_16" />
+
+                    <ImageView
+                        android:id="@+id/fimg"
+                        android:layout_width="@dimen/pad_20"
+                        android:layout_height="@dimen/pad_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/selectedicon"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/gujarati_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/unselected_drawable"
+                android:visibility="visible">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_5dp"
+                    android:paddingRight="@dimen/dimen_5dp">
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:id="@+id/guj"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/dimen_5dp"
+                        android:gravity="center_vertical"
+                        android:text="ગુજરાતી"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_16" />
+
+                    <ImageView
+                        android:id="@+id/simg"
+
+                        android:layout_width="@dimen/pad_20"
+                        android:layout_height="@dimen/pad_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/selectedicon"
+
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/hindi_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/unselected_drawable"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_5dp"
+                    android:paddingRight="@dimen/dimen_5dp">
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:id="@+id/hindi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/dimen_5dp"
+                        android:text="हिंदी"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_16" />
+
+                    <ImageView
+                        android:id="@+id/timg"
+
+                        android:layout_width="@dimen/pad_20"
+                        android:layout_height="@dimen/pad_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/selectedicon"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.kamaii.partner.utils.CustomTextViewBold
+        android:id="@+id/btnnext"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lin_123"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:background="@drawable/login_custom_button"
+        android:drawableEnd="@drawable/ic_login_arrow_white"
+        android:gravity="start|center_vertical"
+        android:paddingStart="25dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="10dp"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <!-- <androidx.core.widget.NestedScrollView
+            android:id="@+id/new_order_nested"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">-->
+<!--
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+-->
+
+                <RelativeLayout
+                    android:id="@+id/order_item_rv_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/relative_tob_curved_bg"
+                    app:cardCornerRadius="@dimen/pad_20"
+                    android:paddingBottom="70dp"
+                    tools:cardElevation="0dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/order_item_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/white_curved_bg_20dp"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/margin_10">
+
+                    <TextView
+                        android:id="@+id/txtarivaltimer"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:background="@drawable/ic_timer"
+                        android:gravity="center"
+                        android:paddingTop="2dp"
+                        android:text=""
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layinquiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_alignParentBottom="true">
+
+
+                    <LinearLayout
+                        android:id="@+id/original_btn_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/llAccept"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/button_selectorgreen"
+                            android:gravity="center">
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/accept"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llDecline"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/pass_btn_selector"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/pass_btn_selector"
+                                android:gravity="center">
+
+                                <com.kamaii.partner.utils.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pass"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/duplicate_btn_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/llAcceptduplicate"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/disable_btn"
+                            android:gravity="center">
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/accept"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llDeclineduplicate"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/disable_btn"
+                            android:gravity="center">
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pass"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+          <!--  </RelativeLayout>-->
+    <!--    </androidx.core.widget.NestedScrollView>-->
+
+    </RelativeLayout>
+
+</layout>

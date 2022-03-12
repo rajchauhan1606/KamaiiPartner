@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_10">
+
+        <LinearLayout
+            android:id="@+id/laytitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_back_blue"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_10">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:id="@+id/demodialogTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_toLeftOf="@+id/demodialogcancel"
+                    android:gravity="center_vertical"
+                    android:text="@string/demo_booking_category"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/demodialogcancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_close" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/demolistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/light_gray"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/demo_booking_layout" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

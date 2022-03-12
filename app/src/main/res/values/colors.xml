@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    <color name="colorPrimary">#0078FF</color>
+-->
+    <color name="colorPrimary">#173143</color>
+    <!--<color name="colorPrimary">#488BFF</color>-->
+    <color name="colorPrimary2">#e0215a</color>
+    <color name="colorPrimaryDark">#173143</color>
+    <!--<color name="colorPrimaryDark">#488BFF</color>-->
+    <color name="colorAccent">#0078FF</color>
+    <color name="lunch_dinner_bg">#2881E7</color>
+    <color name="otp_resend_color">#6836C5F0</color>
+    <color name="profile_texting">#173143</color>
+    <color name="profile_background">#f2f2f3</color>
+    <color name="gray_view_address">#eeeef0</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray_view">#f2f2f3</color>
+    <color name="BLUE_TXT">#1C4C5B</color>
+    <color name="dark_blue_color">#173143</color>
+    <!--<color name="dark_blue_color">#488BFF</color>-->
+    <color name="green_slide_color">#5eb701</color>
+    <color name="blue_border_color">#2881E7</color>
+    <color name="first_visitoe_color">#0c4362</color>
+    <color name="second_visitoe_color">#e14e22</color>
+    <color name="third_visitoe_color">#6a2ec1</color>
+    <color name="forth_visitoe_color">#e1215a</color>
+    <color name="light_green_bg">#f0f6f1</color>
+    <color name="light_pink_bg">#FEF6F8</color>
+    <color name="light_yellow_bg">#fffcf5</color>
+    <color name="light_red_bg">#FFF5F5</color>
+
+    <color name="Online_Services">#116BFF</color>
+    <color name="Todays_Order">#FB9005</color>
+    <color name="Pending_Orders">#FF0000</color>
+    <color name="Completed_Orders">#1E9E40</color>
+    <color name="Todays_Earning">#9309CC</color>
+    <color name="Total_Earning">#78580C</color>
+    <color name="Request_Amount">#001891</color>
+    <color name="Kamaii_Wallet">#F10060</color>
+
+
+
+    <color name="textcolor_dark">#173143</color>
+    <color name="edittext_gray">#9c9ca1</color>
+    <color name="pink_color">#E0215A</color>
+    <color name="yellow_color">#f3b004</color>
+    <color name="yellow_color_advance">#14F3B004</color>
+    <color name="pink_color_slot3">#14E0215A</color>
+    <color name="blue_color_slot2">#141E8CAB</color>
+    <color name="green_color_slot1">#145EB701</color>
+    <color name="off_white">#F1ECE4</color>
+    <color name="off_whitetwo">#F5F5F8</color>
+    <color name="customercolor">#4A18C5</color>
+    <color name="lightgreen">#A8EBAF</color>
+    <color name="lightgreenone">#E3F8E4</color>
+    <color name="windowBackground">#1C1C1C</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="timercolor">#36c5f0</color>
+    <color name="red_btn">#E02020</color>
+
+    <color name="red_background">#fec2c2</color>
+    <color name="divider">#333333</color>
+    <color name="light_gray">#DFDFDF</color>
+    <color name="light_blue">#F1FAFF</color>
+
+    <color name="search_back">#DFDFDF</color>
+    <color name="productback">#f9f8f8</color>
+    <color name="background">#AB95CF</color>
+
+    <color name="status_bar_color">#FFFFFF</color>
+    <color name="off_gray">#DEDEDE</color>
+    <color name="red">#ff3647</color>
+    <color name="hintcolor">#173143</color>
+    <color name="black">#1E1E1E</color>
+    <color name="gray_wallet">#60969696</color>
+
+    <color name="black_off">#FF000000</color>
+    <color name="gray">#969696</color>
+    <color name="editback">#f1f1f1</color>
+    <color name="editketext">#383838</color>
+<!--    <color name="green">#21b50b</color>-->
+    <color name="green">#059A00</color>
+    <color name="green_new">#059A00</color>
+    <color name="light_grey">#d3d3d3</color>
+    <color name="chat_out">#c4ccf8</color>
+    <color name="chat_in">#e0e3e6</color>
+    <color name="dark_red">#811700</color>
+    <color name="dark_blue">#5200D8</color>
+    <color name="reds">#FF2D00</color>
+    <color name="yellow">#CDC000</color>
+    <color name="rightbg">#ffaa68</color>
+    <color name="leftbg">#fe6e91</color>
+    <color name="color_next">#5E6B96</color>
+    <string name="otp_message">Please enter the OTP sent to your</string>
+    <color name="approve">#33A4DA</color>
+    <color name="textcolor">#F5F5F5</color>
+    <color name="lightred">#FEC2C2</color>
+    <color name="lightred1">#7EFEC2C2</color>
+    <color name="lightredfour">#FC5B5B</color>
+    <color name="lightredfive">#FFB9B9</color>
+    <color name="colorGrey2">#5A5A5A</color>
+    <color name="lightgreenthree">#ddf2db</color>
+    <color name="lightgreenfour">#C0DDBE</color>
+    <color name="colorGrey">#CECECE</color>
+</resources>

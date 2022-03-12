@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_10">
+
+        <View
+            android:id="@+id/temp_view1_rider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue_border_color" />
+
+        <LinearLayout
+            android:id="@+id/timer_main_linear_rider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp_view1_rider"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/timer_relative_rider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temp_view1_rider"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:paddingRight="@dimen/margin_10"
+                android:paddingBottom="@dimen/dimen_5dp">
+
+                <ImageView
+                    android:id="@+id/clock_123_rider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_rider_blue_schooter" />
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:id="@+id/order_status_rider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/clock_123_rider"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text="Riders arriving in : "
+                    android:textColor="@color/dark_blue_color"
+                    android:textSize="@dimen/dp_14" />
+
+                <com.tsuryo.androidcountdown.Counter
+                    android:id="@+id/rider_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/order_status_rider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10">
+
+                <LinearLayout
+                    android:id="@+id/rider_details_main_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/new_rider_call"
+                    android:orientation="vertical">
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:id="@+id/new_order_rider_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mukesh Thakor"
+                        android:textColor="@color/blue_border_color"
+                        android:textSize="@dimen/dp_16" />
+
+                </LinearLayout>
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:id="@+id/new_rider_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/login_custom_button"
+                    android:backgroundTint="@color/blue_border_color"
+                    android:paddingLeft="@dimen/pad_15"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:paddingRight="@dimen/pad_15"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:text="Call"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_14" />
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rider_order_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

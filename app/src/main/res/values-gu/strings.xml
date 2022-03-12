@@ -1,0 +1,553 @@
+<resources>
+    <string name="app_name">Kamaii Partner</string>
+
+
+    <string name="mapbox_access_token">pk.eyJ1IjoibXVsdGlzY29wZSIsImEiOiJja2N2eDNkeTQwOGswMndxbGsyNmsxZ2NqIn0.THAudbj7ZULmoP29oj8GIw</string>
+
+    <string name="bottom_sheet_option_heading">ફોટો પસંદ કરો</string>
+    <string name="login">પ્રવેશ કરો</string>
+
+    <string name="bottom_sheet_option_camera">કેમેરા</string>
+    <string name="bottom_sheet_option_gallery">ગેલેરી</string>
+    <string name="button_allow">મંજૂરી આપો</string>
+    <string name="button_deny">નામંજૂર કરો</string>
+    <string name="hello_blank_fragment">હેલો કોરો ટુકડો</string>
+    <string name="please_wait">મહેરબાની કરી રાહ જુવો...</string>
+    <string name="ok">બરાબર</string>
+    <string name="cancel">રદ કરો</string>
+    <string name="payment_info">ચુકવણીની માહિતી</string>
+    <string name="finish_job">કામ પૂરું</string>
+
+    <string name="intro_1">સ્વાગત છે ..</string>
+    <string name="intro_2">સ્વાગત છે ..</string>
+    <string name="intro_3">સ્વાગત છે ..</string>
+    <string name="internet_concation">કૃપા કરીને તમારું ઇન્ટરનેટ કનેક્શન ચાલુ કરો.</string>
+    <string name="action_camera">કેમેરા</string>
+    <string name="invoice">બિલ</string>
+    <string name="pending">બાકી</string>
+    <string name="confirm">પુષ્ટિ મળી</string>
+    <string name="acc">સ્વીકાર્યું</string>
+    <string name="curent">હાલનું </string>
+    <string name="rej">નકારી</string>
+    <string name="com">પૂર્ણ</string>
+    <string name="dec">નકારવું</string>
+    <string name="dec_msg">શું તમે ખરેખર આ નિમણૂકને નકારવા માંગો છો?</string>
+    <string name="acc_msg">શું તમે ખરેખર આ નિમણૂક સ્વીકારવા માંગો છો?</string>
+    <string name="comp">પૂર્ણ</string>
+    <string name="close_msg">શું તમે ખરેખર Kamaii Partner બંધ કરવા માંગો છો?</string>
+    <string name="yes">હા!</string>
+    <string name="no">ના</string>
+    <string name="skip">અવગણો</string>
+    <string name="my_profile">મારી વ્યવસાય પ્રોફાઇલ</string>
+    <string name="promotion">મારુ પ્રમોશન</string>
+    <string name="select_services">કામ પસંદ કરો</string>
+    <string name="serviceee">કામ</string>
+    <string name="select_img">છબી પસંદ કરો</string>
+    <string name="select_pic">ચિત્ર પસંદ કરો </string>
+    <string name="jobs_comleted">નોકરીઓ પુરી</string>
+    <string name="completion">પુરી</string>
+    <string name="online">ઓનલાઇન</string>
+    <string name="offline">ઑફ્લાઈન</string>
+    <string name="rate">દર</string>
+    <string name="hr">/hr</string>
+    <string name="fix_rate">એક દર</string>
+    <string name="fixed_rate">એક દર</string>
+    <string name="commis_msg"> કમિશન તમારા કલાકદીઠ દરમાં ઉમેરવામાં આવશે. તે કેટેગરીની પસંદગી પ્રમાણે બદલાશે. વર્ગ પ્રમાણે દર બદલાશે:</string>
+    <string name="select_cate">કેટેગરી પસંદ કરો</string>
+    <string name="val_name">કૃપા કરી નામ દાખલ કરો.</string>
+    <string name="val_location">કૃપા કરીને સ્થાન દાખલ કરો.</string>
+    <string name="val_category">કૃપા કરીને કેટેગરી દાખલ કરો</string>
+    <string name="val_iid">કૃપા કરીને ભરતિયું ID પસંદ કરો</string>
+    <string name="val_subcatogry"> કૃપા કરીને સબ કેટેગરી દાખલ કરો</string>
+    <string name="val_sublevelcatogry">કૃપા કરીને સબ લેવલ કેટેગરી દાખલ કરો.</string>
+    <string name="val_sname"> કૃપા કરીને સેવા નામ દાખલ કરો.</string>
+    <string name="chats">ગપસપો</string>
+    <string name="val_comment">કૃપા કરીને ટિપ્પણી દાખલ કરો </string>
+    <string name="val_email">કૃપા કરીને માન્ય ઇમેઇલ આઈડી દાખલ કરો.</string>
+    <string name="val_mobile">કૃપા કરીને માન્ય મોબાઇલ નંબર </string>
+    <string name="val_pass">પાસવર્ડમાં ઓછામાં ઓછા છ અક્ષરો હોવા આવશ્યક છે.</string>
+    <string name="my_appoin">મારી નિમણૂંકો</string>
+    <string name="customer_booking">વર્તમાન બુકિંગ</string>
+    <string name="dec_cpas">અસ્વીકાર </string>
+    <string name="decline_msg">શું તમે ખરેખર વિનંતીને નકારવા માંગો છો?</string>
+    <string name="get_discount">ડિસ્કાઉન્ટ મેળવો</string>
+    <string name="code_copy">કોડ સંગ્રાહ</string>
+    <string name="referral_msg">હેલો, આ મારો રેફરલ કોડ છે</string>
+    <string name="opss_share">!!ઓહ!! એવું લાગે છે કે તમે કોઈ શેરિંગ એપ્લિકેશન ઇન્સ્ટોલ કરેલી નથી</string>
+    <string name="support">સપોર્ટ</string>
+    <string name="app_update">અમારા વિશે</string>
+    <string name="val_title">કૃપા કરીને શીર્ષક દાખલ કરો.</string>
+    <string name="female">નારી</string>
+    <string name="male">નર</string>
+    <string name="logout_msg">શું તમે ખરેખર લોગઆઉટ કરવા માંગો છો?</string>
+    <string name="notifications">સૂચનાઓ</string>
+    <string name="tvideo">તાલીમ વિડિઓ</string>
+    <string name="addrefer">વાપરનારને જોડો</string>
+    <string name="viewrefer">જુઓ વાપરવાની વિગત</string>
+    <string name="my_earnings">તમારી કમાણી </string>
+    <string name="my_promotion">મારી પ્રમોશન</string>
+    <string name="earning_graph">આવક ગ્રાફ</string>
+    <string name="payment">ચુકવણી</string>
+    <string name="process_payment">શું તમે ખરેખર તમારી ચુકવણી પર પ્રક્રિયા કરવા માંગો છો?</string>
+    <string name="jobs">નોકરી શોધો</string>
+    <string name="bookings">ઓર્ડરની વિગતો</string>
+    <string name="cabbookings">ઓર્ડર</string>
+    <string name="job_title">જોબ શીર્ષક:</string>
+    <string name="date">તારીખ:</string>
+    <string name="val_des">કૃપા કરીને વર્ણન દાખલ કરો.</string>
+    <string name="val_price">કૃપા કરી કિંમત દાખલ કરો.</string>
+    <string name="val_pnumber">કૃપા કરીને વિહિકલ નંબર દાખલ કરો.</string>
+    <string name="inprogres">ચાલી રહેલ</string>
+    <string name="reject">અસ્વીકાર</string>
+    <string name="reject_msg">શું તમે ખરેખર એપ્લિકેશનને નકારી કરવા માંગો છો? </string>
+    <string name="start_app">શું તમે ખરેખર એપ્લિકેશન શરૂ કરવા માંગો છો?</string>
+    <string name="start">પ્રારંભ કરો</string>
+    <string name="service">રસીદ આઈડી #</string>
+    <string name="Cancel_msg">રાઇડર ઉપલબ્ધ ન હોવાને કારણે આ બુકિંગ રદ થાય છે અથવા તમારી વિનંતીને નકારી કાઢી છે, તેથી જો તમે કોઈપણ રકમ તમારા વોલેટ એકાઉન્ટને પરત આપી હોય તો. કૃપા કરી ફરીથી પ્રયત્ન કરો.</string>
+    <string name="unpaid">અવેતન</string>
+    <string name="paid">ચૂકવેલ </string>
+    <string name="duration">અવધિ:</string>
+    <string name="solve">ઉકેલો </string>
+    <string name="close">બંધ</string>
+    <string name="sign_up">નોંધણી</string>
+    <string name="sign_in">લોગ ઈન</string>
+    <string name="payment1">ચુકવણી?</string>
+    <string name="select_your_payment_mode">તમારું ચુકવણી મોડ પસંદ કરો</string>
+    <string name="about">લગભગ</string>
+    <string name="qualification">લાયકાત</string>
+    <string name="comment">ટિપ્પણી</string>
+    <string name="write_your_message">તમારો સંદેશ લખો</string>
+    <string name="forgot_password">પાસવર્ડ ભૂલી ગયા છો</string>
+    <string name="email_id">ઇમેઇલ આઈડી</string>
+    <string name="submit">સબમિટ</string>
+    <string name="apply_code">કોડ લાગુ કરો</string>
+    <string name="copy">સેવ</string>
+    <string name="invite_friend">મિત્રને આમંત્રણ આપો</string>
+    <string name="delete">કાઢી નાખવું</string>
+    <string name="full_name">આખું નામ </string>
+    <string name="email_address">ઇમેઇલ આઈડી</string>
+    <string name="mobile_number">મોબાઇલ નંબર</string>
+    <string name="gender">લિંગ</string>
+    <string name="password_change">પાસવર્ડ બદલો</string>
+    <string name="signout">સાઇનઆઉટ</string>
+    <string name="enter_password">પાસવર્ડ દાખલ કરો</string>
+    <string name="forgotten_password">પાસવર્ડ ભૂલી ગયા છો? </string>
+    <string name="didn_t_have_any_account">Kamaii Partner ખાતું નથી? </string>
+    <string name="do_you_have_an_account_already">શું તમારી પાસે અને એકાઉન્ટ છે?</string>
+    <string name="job_id">જોબ આઈડી:</string>
+    <string name="services_type">સેવાઓ પ્રકાર:</string>
+    <string name="apply">લાગુ કરો</string>
+    <string name="reject1">અસ્વીકાર કરો</string>
+    <string name="start_job">જોબ પ્રારંભ કરો</string>
+    <string name="inprogress">ચાલુ કામ</string>
+    <string name="edit">સંપાદિત કરો</string>
+    <string name="complete">પૂરું</string>
+    <string name="review_by">સમીક્ષા કરો</string>
+    <string name="add_title">શીર્ષક ઉમેરો</string>
+    <string name="enter_title">શીર્ષક દાખલ કરો</string>
+    <string name="cancel1">રદ કરો</string>
+    <string name="add">ઉમેરો</string>
+    <string name="save">સાચવો</string>
+    <string name="apply_job">જોબ લાગુ કરો</string>
+    <string name="write_description">ટૂંકું વર્ણન</string>
+    <string name="address">સરનામું </string>
+    <string name="price">કિંમત </string>
+    <string name="add_gallery">ગેલેરી ઉમેરો</string>
+    <string name="edit_personal_information"> વ્યવસાય માહિતી</string>
+    <string name="basic_information">ધંધાની માહિતી</string>
+    <string name="select_your_speciality">તમારી વિશેષતા પસંદ કરો</string>
+    <string name="your_name">તમારું નામ </string>
+    <string name="business_name">ધંધાનું નામ </string>
+    <string name="your_bio">તમારું બાયો</string>
+    <string name="your_city">શહેર</string>
+    <string name="your_country">તમારો દેશ</string>
+    <string name="your_location">તમારો એરિયા</string>
+    <string name="add_product">સેવા ઉમેરો</string>
+    <string name="product_name">સેવા નામ</string>
+    <string name="add_qualification"> લાયકાત ઉમેરો</string>
+    <string name="title">શીર્ષક</string>
+    <string name="description">વર્ણન</string>
+    <string name="old_password">જૂનો પાસવર્ડ</string>
+    <string name="new_password">નવો પાસવર્ડ</string>
+    <string name="confirm_password">પાસવર્ડની પુષ્ટિ કરો</string>
+    <string name="select">પસંદ કરો</string>
+    <string name="search_by_job">જોબ શીર્ષક દ્વારા શોધો</string>
+    <string name="search_by_cus">શોધ </string>
+    <string name="no_jobs_applied">કોઈ નોકરી લાગુ નથી</string>
+    <string name="no_appointment_found">કોઈ નિમણૂક નહીં</string>
+    <string name="no_jobs_found">કોઈ જોબ મળી શકશો નહીં</string>
+    <string name="no_booking_found">કોઈ બુકિંગ નહીં</string>
+    <string name="no_chat_history_found">કોઈ ઇતિહાસની ભૂમિકા નહીં</string>
+    <string name="no_notification_found">કોઈ સૂચન ફંડ નહીં</string>
+    <string name="new_request_found">નવી વિનંતીનો અવાજ</string>
+    <string name="working_time">વર્કિંગ ટાઇમ</string>
+    <string name="decline">અસ્વીકાર</string>
+    <string name="start_job1">જોબ પ્રારંભ કરો</string>
+    <string name="finish_the_job">જોબ સમાપ્ત કરો</string>
+    <string name="work_in_progress">કાર્ય ચાલુ છે</string>
+    <string name="no_request_found">કોઈ વિનંતી નથી</string>
+    <string name="paid1">ચૂકવેલ</string>
+    <string name="unpaid1">અવેતન</string>
+    <string name="all_jobs">બધું કામ</string>
+    <string name="applied_jobs">ચાલુ કરવું કામ</string>
+    <string name="fit_image">ફિટ ઇમેજ</string>
+    <string name="square">ચોરસ</string>
+    <string name="free">મફત</string>
+    <string name="circle">સરકલ</string>
+    <string name="this_week">આ અઠવાડિયે</string>
+    <string name="online_earning">ઉનલાઇન આવક</string>
+    <string name="wallet_earning">વોલેટ આવક</string>
+    <string name="cash_earning">કેશ આવક</string>
+    <string name="complete1">સમાંપ્ત %</string>
+    <string name="total_earning">કુલ આવક</string>
+    <string name="job_done">સમાંપ્ત જોબ</string>
+    <string name="jobs_done">જોબસ સમાંપ્ત</string>
+
+    <string name="referearning">આવકનો સંદર્ભ</string>
+    <string name="banktransfer">બેંક સ્થાનાંતરણ </string>
+
+    <string name="total_job">કુલ ઓર્ડર</string>
+    <string name="total_jobs">કુલ ઓર્ડર</string>
+
+
+    <string name="wallet_amount">વોલેટની રકમ</string>
+    <string name="request_for_payment">ચુકવણી માટેની વિનંતી</string>
+    <string name="search_by_invoice">રસીદ આઈડી દ્વારા શોધો</string>
+    <string name="no_ticket_found">કોઈ ટિકિટ નહિ</string>
+    <string name="job_done_for">જોબ પુરી</string>
+    <string name="no_history_found">કોઈ ઈતિહાસ નહીં</string>
+    <string name="select_image">છબી પસંદ કરો</string>
+    <string name="my_rate">સેવા ભાવ</string>
+    <string name="accept">સ્વીકારો </string>
+    <string name="hour_rate">કલાક દર</string>
+    <string name="get_your_best_service_from_us">અમારી પાસેથી તમારી શ્રેષ્ઠ સેવા મેળવો</string>
+    <string name="gallery">ગેલેરી </string>
+    <string name="wallet_balance">વોલેટ બેલેન્સ </string>
+    <string name="all">બધા </string>
+    <string name="debit">ડેબિટ</string>
+    <string name="credit">ક્રેડિટ </string>
+    <string name="money">નાણાં ઉમેરો</string>
+    <string name="add_money">નાણાં ઉમેરો</string>
+    <string name="enter_amount">રકમ દાખલ કરો</string>
+    <string name="val_money">કૃપા કરીને ઉમેરવા માટે નાણાં દાખલ કરો ..</string>
+    <string name="ic_wallet">વોલેટ</string>
+    <string name="payment_option">ચુકવણી વિકલ્પ</string>
+    <string name="delete_quali">લાયકાત ડિલેટ કરો </string>
+    <string name="delete_quali_msg">શું તમે ખરેખર આ લાયકાત ડિલેટ કરવા માંગો છો?</string>
+    <string name="delete_gallery">ગેલેરી ડિલેટ</string>
+    <string name="delete_gallery_msg">શું તમે ખરેખર આ છબી ડિલેટ કરવા માંગો છો?</string>
+
+    <string name="delete_service">સેવા ડિલેટ કરો</string>
+    <string name="delete_service_msg">શું તમે ખરેખર આ સેવા ડિલેટ કરવા માંગો છો?</string>
+
+    <string name="update_qualification">લાયકાત અપડેટ કરો</string>
+    <string name="val_iamg_ad">કૃપા કરીને પહેલા છબી ઉમેરો.</string>
+    <string name="val_pass_c">કૃપા કરીને 6-13 અંકો</string>
+    <string name="val_new_pas">કૃપા કરીને નવો પાસવર્ડ દાખલ કરો</string>
+    <string name="val_c_pas">કૃપા કરીને પાસવર્ડની પુષ્ટિ કરો</string>
+    <string name="val_n_c_pas">પાસવર્ડ મેળ ખાતો નથી..!!</string>
+    <string name="other">બીજું </string>
+    <string name="refer">રેફેર અને આવક</string>
+    <string name="no_gallery_found">કોઈ ગેલેરી મળી નથી</string>
+    <string name="no_service_found">કોઈ સેવા મળી નથી</string>
+    <string name="settings">સેટિંગ્સ </string>
+    <string name="update">અપડેટ </string>
+    <string name="reviews">સમીક્ષા (</string>
+    <string name="try_after">કૃપા કરીને થોડા સમય પછી પ્રયત્ન કરો.</string>
+    <string name="val_city">કૃપા કરીને શહેર દાખલ કરો.</string>
+    <string name="terms_of_use">ઉપયોગની શરતો</string>
+    <string name="privacy_policy">ગોપનીયતા નીતિ</string>
+    <string name="and">અને</string>
+    <string name="agreed">વાંચ્યું છે અને સંમત થયા છે </string>
+    <string name="val_description">કૃપા કરીને વર્ણન દાખલ કરો</string>
+    <string name="val_title1">કૃપા કરીને શીર્ષક દાખલ કરો</string>
+    <string name="insufficient_balance">તમે ચુકવણી માટે વિનંતી કરી શકતા નથી કારણ કે તમારા વોલેટમાં અપૂરતું સંતુલન નથી</string>
+    <string name="invoice_date">રસીદ તારીખ</string>
+    <string name="due_date">છેલ્લી તારીખ</string>
+    <string name="subtotal">કુલ સરવાળો </string>
+    <string name="total">કુલ </string>
+    <string name="view_invoice">રસીદ જુઓ</string>
+    <string name="home_features">સુવિધાઓ </string>
+    <string name="bookings_and_job">ઓર્ડર  &amp; રસીદ</string>
+    <string name="personal">વ્યક્તિગત </string>
+    <string name="incomplete_profile">અપૂર્ણ પ્રોફાઇલ</string>
+    <string name="incomplete_profile_msg">તમારી પ્રોફાઇલ અપૂર્ણ છે. કૃપા કરી તમારી પ્રોફાઇલ પૂર્ણ કરો </string>
+
+    <string name="pendings">પૂછપરછ </string>
+    <string name="accepted">સ્વીકારો </string>
+    <string name="current">બુકિંગ </string>
+    <string name="rejected">અસ્વીકાર</string>
+    <string name="completed">પુરી </string>
+    <string name="rejected1">અસ્વીકાર </string>
+    <string name="completed1">પુરી</string>
+    <string name="trms_acc">કૃપા કરીને ઉપયોગની શરતો અને ગોપનીયતા નીતિ સ્વીકારો</string>
+    <string name="no_reviews_found">સમીક્ષાઓ મળી નથી</string>
+    <string name="no_privious_found">કોઈ પ્રાચીન કાર્ય મળ્યું નથી</string>
+    <string name="create_account">kamaii Partner ખાતું બનાવો</string>
+    <string name="all_categories">બધી કેટેગરીઝ</string>
+    <string name="all_sub_categories"> બધી પેટા કેટેગરીઝ</string>
+    <string name="all_sub__level_categories">તમામ પેટા સ્તરની શ્રેણીઓ </string>
+    <string name="all_service_name">બધા સેવા નામ</string>
+    <string name="no_cate_found">કોઈ કેટેગરી મળી નથી</string>
+    <string name="no_sub_cate_found">કોઈ પેટા કેટેગરી મળી નથી</string>
+    <string name="no_sub_cate_level_found">કોઈ પેટા સ્તરની કેટેગરી મળી નથી</string>
+    <string name="no_service_name_found">કોઈ સેવા નામ મળ્યું નથી</string>
+    <string name="no_rate_found">કોઈ ડેટા મળ્યો નથી </string>
+    <string name="select_category">ધંધાની કેટેગરી પસંદ કરો</string>
+    <string name="select_subcategory">પેટા વર્ગ પસંદ કરો </string>
+    <string name="select_sublevelcategory">સબ-લેવલ કેટેગરી પસંદ કરો</string>
+    <string name="select_sname">સેવા નામ પસંદ કરો</string>
+    <string name="select_rate">દર પસંદ કરો</string>
+    <string name="select_invoice_id">રસીદ આઈડી પસંદ કરો</string>
+    <string name="contact">સહાય </string>
+
+    <string name="tap_to_select_date">તારીખ અને સમય પસંદ કરવા માટે ટેપ કરો </string>
+    <string name="resend_msg">OTP ફરીથી મોકલો?</string>
+    <string name="wamsgone">અગાઉથી આભાર. તમારો નંબર*</string>
+    <string name="documentmsg">અમારો સંપર્ક કરવા બદલ આભાર! અમે ટૂંક સમયમાં તમારી સાથે સંપર્ક કરીશું.\n\n
+
+જ્યારે અમે તમારી પ્રશ્નોના ઝડપથી જવાબો આપવા માટે શ્રેષ્ઠ પ્રયાસો કરીએ છીએ, ત્યારે પીક અવર્સ દરમિયાન અમારો પ્રતિસાદ પ્રાપ્ત કરવામાં લગભગ 2 કાર્યકારી દિવસો લાગી શકે છે.\n\n
+
+તમારા ધૈર્ય માટે અગાઉથી આભાર.\n\n
+
+તમારો દિવસ શુભ રહે!</string>
+
+
+    <string name="wamsgtwo">*. હું Kamaii Partner એપ્લિકેશનનો ઉપયોગ કરી રહ્યો છું જેણે ઘણી સેવાઓ પ્રદાન કરી છે જેમ કે:\n\n
+1. કેબ બુકિંગ\n
+2. રિક્ષા બુકિંગ\n
+3. કિરાણા ડિલિવરી\n
+4. હોમ ફૂડ (ટિફિન, ખાખરા, થેપ્લા)\n
+5. પેડલ સાયકલ\n
+6. ફોટોગ્રાફી\n
+Etc .\n\nઆ એપ્લિકેશનનો ઉપયોગ કરીને તમારે કોઈ અન્ય જગ્યાએ જવાની જરૂર નથી, આ અમારું એકમાત્ર પ્લેટફોર્મ છે જે એક જ જગ્યાએ અનેકવિધ સેવાઓ પ્રદાન કરે છે.
+ \n\n* Customer એપ્લિકેશન ડાઉનલોડ કરો:\nhttps://play.google.com/store/apps/details?id=com.okybook.customer* \n\nઆભાર \n *Kamaii*</string><!--
+    <string name="api_key">AIzaSyAtGjxgk1hivhQaWBzF7oD5JJ2cviFXusk</string>
+    <string name="api_key">AIzaSyA8TzVEucb3uuN0qO_bIeICWHANVCR3ZyY</string>
+-->
+    <string name="api_key">AIzaSyCIpO2XuPQr8HDOg92EU0pRkP0G9rKvFoY</string>
+    <string name="whatsup_msg2">\n </string>
+    <string name="whatsup_msg3">અને રજિસ્ટર નંબર:</string>
+    <string name="whatsup_msg4">\nહું મંજૂરીની રાહ જોઈ રહ્યો છું. કૃપા કરીને મારી સ્થિતિ તપાસો?</string>
+
+
+    <string name="title_activity_contact_list">સંપર્કલિસ્ટએક્ટિવિટી</string><!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">પેલો ટુકડો</string>
+    <string name="second_fragment_label">બીજો ટુકડો</string>
+    <string name="next">આગળ </string>
+    <string name="previous">અગાઉના</string>
+
+    <string name="hello_first_fragment">હેલો પેલો ટુકડો</string>
+    <string name="hello_second_fragment">હેલો બીજો ટુકડો. Arg: %1$s</string>
+    <string name="title_activity_basic_info">ScrollingActivity</string>
+    <string name="action_settings">સેટિંગ</string>
+
+    <string name="name">નામ</string>
+    <string name="navigation">Navigatiopasswordn</string>
+    <string name="password">પાસવડ</string>
+    <string name="rate_us">અમારો દર</string>
+    <string name="get_help">સહાય મેળવો</string>
+    <string name="bank_documentation">બેંક દસ્તાવેજીકરણ</string>
+    <string name="bank_information">બેંક માહિતી</string>
+    <string name="cancel_cheque_copy">ચેક કોપી</string>
+    <string name="add_services">સેવાઓ ઉમેરો</string>
+    <string name="auto">એની જાતે</string>
+    <string name="manual">તમે કરો</string>
+    <string name="crop_your_document">તમારા દસ્તાવેજને કાપો</string>
+    <string name="done">થઈ ગયું</string>
+    <string name="email">ઇમેઇલ</string>
+    <string name="click_to_live_chat_on_whatsapp">વોટ્સએપ પર લાઇવ ચેટ કરવા ક્લિક કરો</string>
+    <string name="click_here_to_drop_on_email">ઇમેઇલ પર મૂકવા અહીં ક્લિક કરો</string>
+    <string name="click_here_to_call">કોલ કરવા અહીં ક્લિક કરો </string>
+    <string name="hello_kamaii">હેલો, Kamaii</string>
+    <string name="you_are_few_step_away_from_comleting_your_profile">તમે તમારી પ્રોફાઇલ પૂર્ણ કરવાથી થોડા પગલાઓ દૂર છો</string>
+    <string name="personal_documentation">વ્યક્તિગત દસ્તાવેજીકરણ</string>
+    <string name="business_documentation">ધંધાનું દસ્તાવેજીકરણ</string>
+    <string name="training_center">તાલીમ કેન્દ્ર</string>
+    <string name="submit_for_approval">મંજૂરી માટે સબમિટ કરો</string>
+    <string name="find_your_friends_at_kamaii_partner">તમારા Friends Kamaii Partner પર શોધો</string>
+    <string name="checkout_which_of_your_contact_are_register_as_a_kamaii_partner">તમારા સંપર્કમાંથી Kamaii Partner તરીકે નોંધાયેલા છે તે તપાસો</string>
+    <string name="enter_your_mobile_number_to_continue_with_kamaii">Kamaii Partner સાથે ચાલુ રાખવા માટે તમારો મોબાઇલ નંબર દાખલ કરો</string>
+    <string name="don_t_have_an_account">ખાતું નથી?</string>
+    <string name="register_now">આજે નોંધણી કરો </string>
+    <string name="quantity">જથ્થો</string>
+    <string name="kamaii">Kamaii</string>
+    <string name="submit_review">સમીક્ષા સબમિટ કરો</string>
+    <string name="enter_bank_name">બેંકનું નામ</string>
+    <string name="bank_name">બેંકનું નામ</string>
+    <string name="enter_beneficiary_name">લાભકર્તાનું નામ દાખલ કરો</string>
+    <string name="beneficiary_name">નામ દાખલ કરો</string>
+    <string name="enter_account_number">એકાઉન્ટ નંબર દાખલ કરો</string>
+    <string name="account_number">ખાતા નંબર</string>
+    <string name="enter_ifsc_code">આઈએફએસસી કોડ દાખલ કરો</string>
+    <string name="ifsc_code">આઈએફએસસી કોડ</string>
+    <string name="enter_branch">શાખા દાખલ કરો</string>
+    <string name="your_review">તમારી સમીક્ષા*</string>
+    <string name="online_time">ઓનલાઇન કલાકો</string>
+
+    <string name="language">ભાષા</string>
+    <string name="join_our_kamaii_partner">Kamaii સાથે જોડાઓ!</string>
+
+    <string name="welcome_to_kamaii">KAMAII માં આપનું સ્વાગત છે</string>
+    <string name="hello_nice_to_meet_you">નમસ્તે, આપને મળી ને આનંદ થયો!</string>
+    <string name="phone_number_verification">ફોન નંબર ચકાસણી</string>
+    <string name="please_enter_the_otp">કૃપા કરીને ઓટીપી દાખલ કરો</string>
+
+    <string name="sent_to_your_registered_mobile_number">તમારો રજિસ્ટર્ડ મોબાઈલ નંબર</string>
+    <string name="didn_t_receive_the_otp">ઓટીપી પ્રાપ્ત થયો નથી?</string>
+
+    <string name="branch">શાખા</string>
+    <string name="enter_reference_name_and_number">સંદર્ભ નામ અને નંબર દાખલ કરો</string>
+    <string name="enter_car_number">કાર નંબર દાખલ કરો</string>
+    <string name="search_referred_friend">શોધો Friends</string>
+    <string name="quick_chat">ઝડપી ચેટ</string>
+    <string name="account_holder_name">ખાતાધારકનું નામ</string>
+    <string name="profile_not_approved">પ્રોફાઇલ માન્ય નથી</string>
+    <string name="your_profile_is_not_approved_by_admin_please_contact_to_admin">તમારી પ્રોફાઇલ એડમિન દ્વારા માન્ય નથી, કૃપા કરીને એડમિનનો સંપર્ક કરો</string>
+    <string name="upload_documents">દસ્તાવેજો અપલોડ કરો</string>
+    <string name="partner_number">વાહન નંબર</string>
+    <string name="confirmation_photo">પુષ્ટિ ફોટો</string>
+    <string name="please_enter_reason">કૃપા કરીને કારણ દાખલ કરો</string>
+    <string name="enter_value">કિંમત દાખલ કરો</string>
+    <string name="write_a_review">એક સમીક્ષા લખો</string>
+    <string name="help">સહાય કરો</string>
+    <string name="today_earning">આજની કમાણી</string>
+    <string name="today_booking">આજની બુકિંગ</string>
+
+    <string name="searching_for_booking">બુકિંગ શોધી રહ્યા છે</string>
+    <string name="you_re_offline">તમે ઑફ્લાઇન છો</string>
+    <string name="you_re_online"> તમે ઓનલાઇન છો</string>
+    <string name="training_amp_benefit">તાલીમ અને લાભ</string>
+
+    <string name="create_kamaii_account">Kamaii એકાઉન્ટ બનાઓ</string>
+    <string name="by_creating_an_account_you_agree_to_our">એકાઉન્ટ બનાવીને, તમે અમારી સાથે સંમત થાઓ છો</string>
+
+    <string name="total_refer">કુલ સંદર્ભ</string>
+    <string name="today_s_payment">આજની ચુકવણી</string>
+    <string name="share_profile">શેર પ્રોફાઇલ</string>
+    <string name="share_services">સેવાઓ શેર કરો</string>
+    <string name="service_txt">સેવા</string>
+    <string name="location_services1">સ્થાનની પરવાનગી</string>
+    <string name="flexible_time_self_assign_rider">ટાઇમ અનુકૂળ રાઇડર બોલાવો</string>
+    <string name="update_service_type">સેવાનો પ્રકાર અપડેટ કરો</string>
+    <string name="launch_activity">પ્રવૃત્તિ શરૂ કરો</string>
+
+    <string name="remove_location_updates">સ્થાન અપડેટ દૂર કરો</string>
+    <string name="location_updated">સ્થાન અપડેટ કર્યું</string>
+    <string name="demo_booking_category">ડેમો બુકિંગ કેટેગરી</string>
+    <string name="enable_location_services">સ્થાન સેવાઓ સક્ષમ કરો</string>
+
+
+    <string name="location_screen_txt">ગ્રાહકોને સવારી દ્વારા સ્થાન સેવાઓને નજીકમાં આવવાની મંજૂરી આપો.</string>
+
+    <string name="select_description">વર્ણન પસંદ કરો</string>
+    <string name="validate_des">કૃપા કરીને સેવા વર્ણન પસંદ કરો</string>
+    <string name="demo_trial">Demo Booking</string>
+    <string name="basic_business_information">મૂળભૂત ધંધાની માહિતી</string>
+    <string name="business_info_playlist_txt">તક સર્વત્ર છે</string>
+    <string name="business_info_playlist_txt2">સૌથી વધુ મહત્ત્વનું શું છે તેના પર ધ્યાન કેન્દ્રિત કર્યા વિના, તમારા વ્યવસાયમાંથી વધુ મેળવો</string>
+
+    <string name="aadhar_card">આધારકાર્ડ</string>
+    <string name="pan_card">પાન કાર્ડ</string>
+    <string name="submit_documents">દસ્તાવેજો સબમિટ કરો</string>
+
+    <string name="driving_licence">ગાડી ચલાવવાની પરવાનગી</string>
+    <string name="vehicle_permit">વાહન પરમિટ</string>
+    <string name="police_verification">પોલીસ વેરિફિકેશન</string>
+    <string name="selfie_with_vehicle_photo">વાહન ફોટો સાથેની સેલ્ફી</string>
+    <string name="owner_photo">માલિકનો ફોટો</string>
+    <string name="selfie_with_photo">फोटो के साथ सेल्फी</string>
+    <string name="choose_booking">બુકિંગ પસંદ કરો</string>
+    <string name="daily_city">દૈનિક શહેર</string>
+    <string name="local_rental">લોકલ ભાડા</string>
+    <string name="out_station">આઉટ સ્ટેશન</string>
+    <string name="prime_car_suv_7_seater">પ્રાઇમ કાર (એસયુવી 7 સીટર)</string>
+    <string name="vehicle_insurance">વાહન વીમો</string>
+    <string name="choose_model_name">મોડેલ નામ પસંદ કરો</string>
+    <string name="vehicle_rc_book">વાહન RC બુક</string>
+    <string name="vehicle_information">વાહનની માહિતી</string>
+    <string name="vehicle_category">વાહન વર્ગ</string>
+    <string name="vehicle_number">વાહન નંબર</string>
+
+    <string name="total_category_txt">કુલ કેટેગરી</string>
+    <string name="total_item_txt">કુલ વસ્તુઓ</string>
+
+    <string name="location_screen_txt1">Kamaii Partner નકશા પર વાહન ચલાવવા, બાઇક રાઇડર અને ભાગીદાર સ્થાનની પૃષ્ઠભૂમિમાં સ્થાનનો ઉપયોગ કરશે.
+
+
+
+    </string>
+    <string name="location_screen_txt2">
+આપમેળે ટ્રેક થયેલ પ્રવૃત્તિઓ માટે નકશા જોવા માટે, Kamaii Partner ને સ્થાનનો ઉપયોગ કરવાની મંજૂરી આપો.    </string>
+
+
+    <string name="my_location">મારું સ્થાન</string>
+    <string name="current_location">હાલની જગ્યા</string>
+    <string name="live_location">લાઈવ સ્થાન</string>
+    <string name="minimum_order_price">ન્યૂનતમ ઓર્ડર કિંમત</string>
+    <string name="shipping_information">શિપિંગ માહિતી</string>
+    <string name="set_order_price">ઓર્ડર કિંમત સેટ કરો</string>
+
+    <string name="house_no_society_name">મકાન નં. / સોસાયટી નામ</string>
+    <string name="covid_19_txt1">COVID-19 દરમિયાન સલામતીની સાવચેતી
+</string>
+    <string name="covid_19_txt2">COVID-19 થી અમારા સમુદાયને સુરક્ષિત રાખવા માટે અમે વધારાના પગલાં અને સાવચેતીનાં પગલાં લઈ રહ્યા છીએ
+</string>
+    <string name="know_more">વધુ જાણો
+</string>
+    <string name="self_shipping">પોતે શિપિંગ કરવું</string>
+    <string name="profile_visit_txt">પ્રોફાઇલ મુલાકાત</string>
+    <string name="total_item_visit_txt">સેવાઓ ની મુલાકાત લો</string>
+    <string name="rider">રાઇડર</string>
+
+
+    <string name="house_no_validate">મકાન નંબર / સોસાયટીનું નામ દાખલ કરો</string>
+
+    <string name="personal_info">વ્યક્તિગત માહિતી</string>\
+    <string name="maximum_km_or_qty">મહત્તમ નંબર સેટ કરો</string>
+    <string name="guide">માર્ગદર્શન</string>
+    <string name="add_business_photo">વ્યવસાય ફોટો ઉમેરો</string>
+    <string name="share">વ્યવસાય કાર્ડ શેર કરો</string>
+    <string name="birthday_share">તમારા મિત્રની શુભેચ્છા</string>
+    <string name="birthday_card">જન્મ દિવસ પત્રિકા</string>
+    <string name="applay_btn">લાગુ કરો</string>
+    <string name="finish_order">ઓર્ડર સમાપ્ત કરો</string>
+    <string name="start_order">ઓર્ડર શરૂ કરો</string>
+    <string name="pickup_location">પિકઅપ લોકેશન</string>
+    <string name="drop_location">છોડવાનું  સ્થાન</string>
+    <string name="cancel_order">ઓર્ડર રદ કરો</string>
+    <string name="waiting_for_rider_time">રાઇડર માટે રાહ જુઓ </string>
+    <string name="home">હોમ</string>
+    <string name="contact_us">અમારો સંપર્ક કરો</string>
+    <string name="thanks_for_using_kamaii">આભાર</string>
+    <string name="share_image">શેર કરો</string>
+    <string name="business_address">વ્યવસાયનું સરનામું</string>
+    <string name="my_business_profile">મારી બિઝનેસ પ્રોફાઇલ</string>
+    <string name="val_select_category">કૃપયા કેટેગરી પસંદ કરો.</string>
+
+    <string name="val_select_subcatogry">કૃપા કરીને સબકૅટેગરી પસંદ કરો.</string>
+    <string name="basic_info_location">તમારું સ્થાન પસંદ કરો</string>
+    <string name="select_an_address">તમારું સરનામું પસંદ કરો</string>
+
+    <string name="search_destination">સરનામું ઉમેરો</string>
+
+    <string name="houseno">મકાન નં. / ફ્લેટ નં. / ફ્લોર / બિલ્ડીંગ</string>
+    <string name="job_comleted">ઓર્ડર પૂર્ણ</string>
+    <string name="enter_society_name">લેન્ડમાર્ક / એન્ટ્રી ગેટ /સ્ટ્રીટ</string>
+
+    <string name="confirm_location_amp_proceed">સ્થાનની પુષ્ટિ કરો અને આગળ વધો</string>
+
+    <string name="requests_for_rider">રાઇડર માટે વિનંતી</string>
+    <string name="placekey">AIzaSyD1JNWPP3foP5TM8mYiquIPfgmYDAOSV_g</string>
+
+    <string name="select_business_card">વ્યવસાય કાર્ડ પસંદ કરો</string>
+    <string name="select_birthday_card">બર્થડે કાર્ડ પસંદ કરો</string>
+    <string name="online_services_title">ઓનલાઇન સેવાઓ</string>
+    <string name="pending_orders">બાકી ઓર્ડર</string>
+    <string name="complete_orders">ઓર્ડર પૂર્ણ કરો</string>
+    <string name="kamaii_wallet">કામાઈ વૉલેટ</string>
+    <string name="request_amount">વિનંતી રકમ</string>
+    <string name="preparation_time">તૈયારી સમય</string>
+
+</resources>
+

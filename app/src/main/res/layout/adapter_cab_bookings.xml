@@ -1,0 +1,2078 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                android:id="@+id/card_relative_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/preparation_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:paddingLeft="@dimen/dimen_5dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:singleLine="true"
+                    android:visibility="gone">
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:id="@+id/prt_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="@string/preparation_time"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_14" />
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:id="@+id/new_preparation_time_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/prt_txt"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <com.tsuryo.androidcountdown.Counter
+                        android:id="@+id/counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@+id/prt_txt" />
+
+                    <Chronometer
+                        android:id="@+id/rider_arrival_chronometer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <com.kamaii.partner.utils.CustomTextView
+                        android:id="@+id/arrival_time_digit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="Waiting for customer confirmation"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_16"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/add_preparation_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+                </RelativeLayout>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivArtist"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/dummyuser_image"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/layall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/preparation_layout"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/margin_10"
+                                android:layout_toLeftOf="@+id/lunch_dinner"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/no_linear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/margin_10"
+                                    android:background="@drawable/number_bg"
+                                    android:paddingLeft="7dp"
+                                    android:paddingTop="0dp"
+                                    android:paddingRight="7dp"
+                                    android:paddingBottom="0dp">
+
+                                    <com.kamaii.partner.utils.CustomTextViewBold
+                                        android:id="@+id/order_count"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/text_16" />
+
+                                </LinearLayout>
+
+                                <com.kamaii.partner.utils.CustomTextViewBold
+                                    android:id="@+id/tvName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/margin_10"
+                                    android:layout_toRightOf="@+id/no_linear"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="16sp" />
+
+                                <com.kamaii.partner.utils.CustomTextView
+                                    android:id="@+id/txtcat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/margin_10"
+                                    android:singleLine="true"
+                                    android:text="sdf"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="12sp"
+                                    android:visibility="gone" />
+
+                            </RelativeLayout>
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:id="@+id/lunch_dinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/margin_10"
+                                android:layout_toLeftOf="@+id/call_main_relative"
+                                android:background="@drawable/shape_rounded"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/margin_10"
+                                android:paddingRight="@dimen/margin_10"
+                                android:paddingBottom="2dp"
+                                android:textColor="@color/white" />
+
+                            <LinearLayout
+                                android:id="@+id/call_main_relative"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true">
+
+                                <LinearLayout
+                                    android:id="@+id/call_linear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="3dp"
+                                    android:background="@drawable/curved_linear_background"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:paddingTop="@dimen/dimen_5dp"
+                                    android:paddingRight="@dimen/margin_10"
+                                    android:paddingBottom="@dimen/dimen_5dp">
+
+                                    <com.kamaii.partner.utils.CustomTextView
+                                        android:id="@+id/imgphone1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Call"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/dp_14" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/dimen_30dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:src="@drawable/phone_2"
+                                        android:tint="@color/white"
+                                        android:visibility="gone">
+
+                                    </ImageView>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/call_linear_disable"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="3dp"
+                                    android:background="@drawable/disable_btn"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:paddingTop="@dimen/dimen_5dp"
+                                    android:paddingRight="@dimen/margin_10"
+                                    android:paddingBottom="@dimen/dimen_5dp"
+                                    android:visibility="gone">
+
+                                    <com.kamaii.partner.utils.CustomTextView
+                                        android:id="@+id/imgphone11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Call"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/dp_14" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/dimen_30dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:src="@drawable/phone_2"
+                                        android:tint="@color/white"
+                                        android:visibility="gone">
+
+                                    </ImageView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp">
+
+                            <LinearLayout
+                                android:id="@+id/date_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dimen_5dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/llDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tvName"
+                                    android:layout_marginLeft="@dimen/margin_10"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="@dimen/pad_20"
+                                        android:src="@drawable/cal_icon"
+                                        android:visibility="gone" />
+
+                                    <com.kamaii.partner.utils.CustomTextView
+                                        android:id="@+id/tvDate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:text=""
+                                        android:textColor="@color/dark_blue_color"
+                                        android:textSize="14sp" />
+
+                                    <com.kamaii.partner.utils.CustomTextViewBold
+                                        android:id="@+id/deliveryDate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:text=""
+                                        android:textColor="@color/dark_blue_color"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+
+                                <com.kamaii.partner.utils.CustomTextViewBold
+                                    android:id="@+id/txtptype"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/buttonroundgblue"
+                                    android:gravity="right"
+                                    android:paddingLeft="7dp"
+                                    android:paddingTop="2dp"
+                                    android:paddingRight="7dp"
+                                    android:paddingBottom="2dp"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="9dp"
+                                    android:visibility="gone" />
+
+                                <com.kamaii.partner.utils.CustomTextViewBold
+                                    android:id="@+id/txtadvanced"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/buttonroundgblue"
+                                    android:gravity="center"
+                                    android:paddingLeft="7dp"
+                                    android:paddingTop="2dp"
+                                    android:paddingRight="7dp"
+                                    android:paddingBottom="2dp"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="9dp"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/cab_request_relative"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/date_layout"
+                                android:layout_marginBottom="@dimen/dimen_5dp">
+
+
+                                <LinearLayout
+
+                                    android:id="@+id/llarrival"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:background="@drawable/buttonfullblue"
+                                    android:gravity="center"
+                                    android:visibility="gone">
+
+                                    <com.kamaii.partner.utils.CustomTextViewBold
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:paddingLeft="@dimen/dimen_30dp"
+                                        android:paddingRight="@dimen/dimen_30dp"
+                                        android:text="Arrival"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="@dimen/margin_10"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingTop="@dimen/dimen_5dp"
+                                    android:paddingBottom="@dimen/dimen_5dp">
+
+                                    <RelativeLayout
+                                        android:id="@+id/prep_relative1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center">
+
+
+                                        <com.kamaii.partner.utils.CustomTextViewBold
+                                            android:id="@+id/items_title"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:text="Total Items:"
+                                            android:textColor="@color/dark_blue_color"
+                                            android:textSize="@dimen/dp_14" />
+
+                                        <com.kamaii.partner.utils.CustomTextViewBold
+                                            android:id="@+id/items_count"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_toRightOf="@+id/items_title"
+                                            android:paddingLeft="@dimen/dimen_5dp"
+                                            android:text="2"
+                                            android:textColor="@color/dark_blue_color"
+                                            android:textSize="@dimen/dp_14" />
+
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/prep_relative"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/prep_timer_layout"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:visibility="gone">
+
+                                            <com.kamaii.partner.utils.CustomTextView
+                                                android:id="@+id/preparation_title"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Preparation Time:"
+                                                android:textColor="@color/dark_blue_color"
+                                                android:textSize="@dimen/text_size_12" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/prep_timer"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_toRightOf="@+id/prep_timer_layout">
+
+                                            <Chronometer
+                                                android:id="@+id/chronometer"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:textColor="@color/green"
+                                                android:textSize="12sp"
+                                                android:visibility="gone" />
+
+
+                                            <com.kamaii.partner.utils.CustomTextView
+                                                android:id="@+id/preparation_time"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="30:00"
+                                                android:textColor="@color/dark_blue_color"
+                                                android:visibility="gone" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/layout_more_linear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:orientation="horizontal">
+
+                                    <com.kamaii.partner.utils.CustomTextView
+                                        android:id="@+id/txtmore"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:gravity="center_vertical"
+                                        android:text="More Details"
+                                        android:textColor="@color/pink_color"
+                                        android:textSize="14sp" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/pad_15"
+                                        android:layout_height="@dimen/pad_15"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/ic_see_more"
+                                        android:tint="@color/pink_color" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/llCancel1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="right"
+                                    android:layout_marginLeft="@dimen/dimen_10dp"
+                                    android:layout_marginRight="@dimen/margin_10"
+                                    android:background="@drawable/custom_curved_background"
+                                    android:backgroundTint="@color/red_background"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/margin_10"
+                                        android:paddingRight="@dimen/margin_10"
+                                        android:src="@drawable/ic_close_white"
+                                        android:text="Cancel Order"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/date_layout"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:id="@+id/type_linear"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_10"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+
+                                    <LinearLayout
+                                        android:id="@+id/product_dtails"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2">
+
+                                        <com.kamaii.partner.utils.CustomTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="Category:"
+                                            android:textColor="@color/gray"
+                                            android:textSize="12sp"
+                                            android:visibility="gone" />
+
+                                        <com.kamaii.partner.utils.CustomTextViewBold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:gravity="right"
+                                            android:paddingLeft="7dp"
+                                            android:text=""
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp"
+                                            android:visibility="gone" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/type_ll"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2">
+
+                                        <com.kamaii.partner.utils.CustomTextView
+                                            android:id="@+id/shipping_type"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="Type:"
+                                            android:textColor="@color/gray"
+                                            android:textSize="12sp" />
+
+                                        <com.kamaii.partner.utils.CustomTextViewBold
+                                            android:id="@+id/tvroundtrip"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:gravity="right"
+                                            android:paddingLeft="7dp"
+                                            android:paddingTop="2dp"
+                                            android:paddingRight="7dp"
+                                            android:paddingBottom="2dp"
+                                            android:text=""
+                                            android:textColor="@color/black"
+                                            android:textSize="12dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cooking_instruction_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layall"
+                    android:layout_margin="@dimen/margin_10"
+                    app:cardCornerRadius="@dimen/dimen_5dp"
+                    app:cardElevation="2dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivArtist"
+                        android:background="@drawable/cooking_bg"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp">
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/cooking_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="5"
+                            android:paddingRight="@dimen/pad_20"
+                            android:text="Cooking Instructions"
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="14sp" />
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:id="@+id/cooking_inst"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cooking_txt"
+                            android:layout_marginTop="@dimen/dimen_5dp"
+                            android:maxLines="5"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/tmp_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_below="@+id/cooking_instruction_card"
+                    android:background="#f2f2f3" />
+
+                <LinearLayout
+                    android:id="@+id/laymoreee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rider_relative"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/llLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivArtist"
+                        android:layout_marginLeft="3dp"
+                        android:padding="5dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_location" />
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/tvLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:maxLines="5"
+                            android:paddingRight="@dimen/pad_20"
+                            android:text=""
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:id="@+id/llLocationdesti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llLocation"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_location" />
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+
+                            android:id="@+id/tvdestiLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:maxLines="5"
+                            android:paddingRight="@dimen/pad_20"
+                            android:text=""
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tmp_view11"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1dp"
+                        android:layout_below="@+id/layall"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:background="#f2f2f3"
+                        android:visibility="gone" />
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:text="Order Information"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_16" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_cart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btnAdd">
+
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <TextView
+                        android:id="@+id/tmp_view123"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1dp"
+                        android:layout_below="@+id/rv_cart"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:background="#f2f2f3" />
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:text="Payment Information"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_16" />
+
+                    <RelativeLayout
+                        android:id="@+id/subtotal_relative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="19dp">
+
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/sub_total_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sub Total"
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="14dp" />
+
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:id="@+id/discounted_rupee_symbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/discounted_total_digits"
+                            android:text=""
+                            android:textColor="#99A0A7"
+                            android:textSize="14dp" />
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/discounted_total_digits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/sub_linear"
+                            android:text=""
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:id="@+id/sub_linear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:id="@+id/sub_total_rupee_symbol"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/sub_total_digits"
+                                android:text=""
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="14dp" />
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:id="@+id/sub_total_digits"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text=""
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/service_charge_relative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="19dp"
+                        android:visibility="gone">
+
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:id="@+id/service_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shipping Charge"
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="14dp" />
+
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/service_rupee_symbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/service_digit_txt"
+                            android:text=""
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="14dp" />
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/service_digit_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text=""
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="19dp">
+
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="5dp"
+                            android:singleLine="true"
+                            android:text="Order Payment "
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="5dp">
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:id="@+id/rupee_symbol"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:singleLine="true"
+                                android:text="₹"
+                                android:textColor="#e0215a"
+                                android:textSize="14sp" />
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:id="@+id/tvtotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="#e0215a"
+                                android:textSize="14sp" />
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/laytotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rv_cart"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal"
+                        android:padding="4dp"
+                        android:visibility="gone">
+
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Total"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/tvtotal1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tmp_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_below="@+id/laymoreee"
+                    android:background="#f2f2f3"
+                    android:visibility="gone" />
+
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:id="@+id/rider_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tmp_view1"
+                    android:layout_marginLeft="@dimen/text_size_15"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="Rider Details"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rider_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rider_details"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/rider_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:id="@+id/rider_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="Name: "
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:id="@+id/rider_name_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="right"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:visibility="gone">
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:id="@+id/arrival_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="15dp"
+                                android:text="Arrival Time: "
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/curved_linear_background"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:paddingTop="@dimen/dimen_5dp"
+                        android:paddingRight="@dimen/margin_10"
+                        android:paddingBottom="@dimen/dimen_5dp">
+
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:id="@+id/imgphone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Call"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp_14" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/no_rider_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/laymoreee"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/kamaiihelplinephone"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/margin_10"
+                        android:paddingBottom="@dimen/margin_10">
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/no_rider_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/text_size_15"
+                            android:text="No Rider Available"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:id="@+id/helpline_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="Please contact Kamaii helpline number."
+                                android:textColor="@color/pink_color"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:visibility="gone">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="15dp"
+                                android:text=": "
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <Chronometer
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:padding="3dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="right"
+                                android:text="00:20"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/kamaiihelplinephone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/curved_linear_background"
+                        android:paddingLeft="@dimen/dimen_30dp"
+                        android:paddingTop="@dimen/dimen_5dp"
+                        android:paddingRight="@dimen/dimen_30dp"
+                        android:paddingBottom="@dimen/dimen_5dp">
+
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Call"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp_16" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/laymoreee"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen_5dp"
+                        android:paddingRight="@dimen/dimen_5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/linear_l"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="@dimen/margin_10"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:id="@+id/pickup_btn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginLeft="@dimen/dimen_10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/curved_linear_background"
+                                    android:gravity="center"
+                                    android:paddingLeft="30dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="30dp"
+                                    android:paddingBottom="5dp"
+                                    android:visibility="gone">
+
+                                    <com.kamaii.partner.utils.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center_vertical"
+                                        android:src="@drawable/ic_close_white"
+                                        android:text="@string/pickup_location"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/pickup_btn_dupli"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginLeft="@dimen/dimen_10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/disable_btn"
+                                    android:gravity="center"
+                                    android:paddingLeft="30dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="30dp"
+                                    android:paddingBottom="5dp">
+
+                                    <com.kamaii.partner.utils.CustomTextView
+                                        android:id="@+id/duplicate_pickup_txt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center_vertical|center_horizontal"
+                                        android:src="@drawable/ic_close_white"
+                                        android:text="@string/pickup_location"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/drop_btn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="right"
+                                    android:layout_marginLeft="@dimen/dimen_10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/curved_linear_background"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="30dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="30dp"
+                                    android:paddingBottom="5dp"
+                                    android:visibility="gone">
+
+                                    <com.kamaii.partner.utils.CustomTextView
+                                        android:id="@+id/drop_btn_txt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:src="@drawable/ic_close_white"
+                                        android:text="@string/drop_location"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/llCancel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="right"
+                                    android:layout_marginLeft="@dimen/pad_15"
+                                    android:layout_marginRight="@dimen/margin_10"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/cancel_btn_background"
+                                    android:gravity="center"
+                                    android:paddingLeft="@dimen/dimen_30dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="30dp"
+                                    android:paddingBottom="5dp">
+
+                                    <com.kamaii.partner.utils.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center_vertical"
+                                        android:src="@drawable/ic_close_white"
+                                        android:text="@string/cancel_order"
+                                        android:textColor="#f8382c"
+                                        android:textSize="12dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/llCancelduplicate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="right"
+                                    android:layout_marginLeft="@dimen/pad_15"
+                                    android:layout_marginRight="@dimen/margin_10"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/disable_btn"
+                                    android:gravity="center"
+                                    android:paddingLeft="@dimen/dimen_30dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="30dp"
+                                    android:paddingBottom="5dp"
+                                    android:visibility="gone">
+
+                                    <com.kamaii.partner.utils.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center_vertical"
+                                        android:src="@drawable/ic_close_white"
+                                        android:text="@string/cancel_order"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:id="@+id/order_status_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/linear_l"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:textSize="@dimen/text_size_16"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <!--
+                                                <LinearLayout
+                                                    android:id="@+id/laymoreee"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="@dimen/margin_10"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_below="@+id/linear_l"
+                                                    android:layout_marginRight="@dimen/margin_10"
+                                                    android:background="@drawable/button_light_gray"
+                                                    android:orientation="vertical"
+                                                    android:visibility="gone">
+
+
+                                                    <LinearLayout
+                                                        android:id="@+id/llLocation"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_below="@+id/ivArtist"
+                                                        android:layout_marginLeft="3dp"
+                                                        android:layout_marginTop="14dp"
+                                                        android:gravity="center"
+                                                        android:padding="5dp">
+
+                                                        <ImageView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:src="@drawable/ic_placeholder" />
+
+                                                        <com.kamaii.partner.utils.CustomTextView
+                                                            android:id="@+id/tvLocation"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="5dp"
+                                                            android:text=""
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+
+                                                        android:id="@+id/llLocationdesti"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_below="@+id/llLocation"
+                                                        android:layout_marginLeft="3dp"
+                                                        android:gravity="center"
+                                                        android:padding="5dp">
+
+                                                        <ImageView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:src="@drawable/ic_placeholder" />
+
+                                                        <com.kamaii.partner.utils.CustomTextView
+
+                                                            android:id="@+id/tvdestiLocation"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="5dp"
+                                                            android:text=""
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+
+                                                    <androidx.recyclerview.widget.RecyclerView
+                                                        android:id="@+id/rv_cart"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_below="@+id/btnAdd"
+                                                        android:layout_marginTop="2dp">
+
+
+                                                    </androidx.recyclerview.widget.RecyclerView>
+
+                                                    <LinearLayout
+                                                        android:id="@+id/laytotal"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_below="@+id/rv_cart"
+                                                        android:layout_marginTop="1dp"
+                                                        android:background="@color/colorPrimary"
+                                                        android:orientation="horizontal"
+                                                        android:padding="4dp">
+
+
+                                                        <com.kamaii.partner.utils.CustomTextViewBold
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_weight="1"
+                                                            android:text="Total"
+                                                            android:textColor="@color/white"
+                                                            android:textSize="12sp"
+                                                            android:textStyle="bold" />
+
+
+                                                        <com.kamaii.partner.utils.CustomTextViewBold
+                                                            android:id="@+id/tvtotal"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_gravity="right"
+                                                            android:layout_weight="1"
+                                                            android:gravity="right"
+                                                            android:text=""
+                                                            android:textColor="@color/white"
+                                                            android:textSize="12sp" />
+
+
+                                                    </LinearLayout>
+
+
+                                                </LinearLayout>
+                        -->
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/request_accept_bt_rider_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tmp_view1"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/margin_10">
+
+
+                        <com.ncorti.slidetoact.SlideToActView
+                            android:id="@+id/startnew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rider_relative"
+                            android:layout_marginLeft="@dimen/pad_15"
+                            android:layout_marginTop="@dimen/pad_15"
+                            android:layout_marginRight="@dimen/pad_15"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="gone"
+                            app:area_margin="2dp"
+                            app:border_radius="7dp"
+                            app:inner_color="@color/white"
+                            app:outer_color="#5eb701"
+                            app:slider_height="@dimen/dimen_45dp"
+                            app:slider_locked="false"
+                            app:text="@string/start_order"
+                            app:text_size="@dimen/text_size_16"
+                            app:text_style="bold" />
+
+                        <com.ncorti.slidetoact.SlideToActView
+                            android:id="@+id/startdelivery"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rider_relative"
+                            android:layout_marginLeft="@dimen/pad_15"
+                            android:layout_marginTop="@dimen/pad_15"
+                            android:layout_marginRight="@dimen/pad_15"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="gone"
+                            app:area_margin="2dp"
+                            app:border_radius="7dp"
+                            app:inner_color="@color/white"
+                            app:outer_color="@color/dark_blue_color"
+                            app:slider_height="@dimen/dimen_45dp"
+                            app:slider_locked="false"
+                            app:text="Complete / Start Delivery"
+                            app:text_size="@dimen/text_size_16"
+                            app:text_style="bold" />
+
+                        <com.ncorti.slidetoact.SlideToActView
+                            android:id="@+id/requestridernew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rider_relative"
+                            android:layout_marginLeft="@dimen/pad_15"
+                            android:layout_marginTop="@dimen/pad_15"
+                            android:layout_marginRight="@dimen/pad_15"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="gone"
+                            app:area_margin="2dp"
+                            app:border_radius="7dp"
+                            app:inner_color="@color/white"
+                            app:outer_color="@color/dark_blue_color"
+                            app:slider_height="@dimen/dimen_45dp"
+                            app:slider_locked="false"
+                            app:text="Request for Rider"
+                            app:text_size="@dimen/text_size_16"
+                            app:text_style="bold" />
+
+                        <com.ncorti.slidetoact.SlideToActView
+                            android:id="@+id/requestridernew1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rider_relative"
+                            android:layout_marginLeft="@dimen/pad_15"
+                            android:layout_marginTop="@dimen/pad_15"
+                            android:layout_marginRight="@dimen/pad_15"
+
+                            android:layout_marginBottom="5dp"
+                            android:visibility="gone"
+                            app:area_margin="2dp"
+                            app:border_radius="7dp"
+                            app:inner_color="@color/white"
+                            app:outer_color="#59173143"
+                            app:slider_height="@dimen/dimen_45dp"
+                            app:slider_locked="true"
+                            android:clickable="false"
+                            app:text="Request for Rider"
+                            app:text_size="@dimen/text_size_16"
+                            app:text_style="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/rider_waiting_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tmp_view1"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_10"
+
+                            android:layout_marginTop="@dimen/dimen_5dp"
+                            android:visibility="gone">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:id="@+id/rider_waiting_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/waiting_for_rider_time"
+                                android:textColor="@color/red"
+                                android:textSize="12sp" />
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:id="@+id/rider_waiting_time_digits"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="right"
+                                android:paddingLeft="@dimen/margin_10"
+                                android:text="5:00"
+                                android:textColor="@color/red"
+                                android:textSize="12sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/cardfinish"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/imgthree"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/gthree"
+                                    android:visibility="gone" />
+
+                                <com.kamaii.partner.utils.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/finish_order"
+                                    android:textSize="15sp"
+                                    android:visibility="gone" />
+
+                                <com.kamaii.partner.utils.CustomTextViewBold
+                                    android:id="@+id/tvnavigationfinish"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@drawable/buttonroundgblue"
+                                    android:gravity="right"
+                                    android:paddingLeft="7dp"
+                                    android:paddingTop="2dp"
+                                    android:paddingRight="7dp"
+                                    android:paddingBottom="2dp"
+                                    android:text="Navigation"
+                                    android:textColor="@color/white"
+                                    android:textSize="9dp"
+                                    android:visibility="gone" />
+
+
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/layfinish"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <RelativeLayout
+                                    android:id="@+id/llTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="0dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+
+                                    <Chronometer
+                                        android:id="@+id/chronometer1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:padding="3dp"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="18sp" />
+
+                                    <com.kamaii.partner.utils.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/chronometer"
+                                        android:gravity="center_vertical"
+                                        android:padding="6dp"
+                                        android:text="@string/working_time"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="15sp" />
+
+                                </RelativeLayout>
+
+                                <com.kamaii.partner.utils.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/green"
+                                    android:padding="5dp"
+                                    android:text="@string/finish_order"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+
+                            <com.ncorti.slidetoact.SlideToActView
+                                android:id="@+id/finishnew"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rider_relative"
+                                android:layout_marginLeft="@dimen/pad_15"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="@dimen/pad_15"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                app:area_margin="2dp"
+                                app:border_radius="7dp"
+                                app:inner_color="@color/white"
+                                app:outer_color="@color/pink_color"
+                                app:slider_height="@dimen/dimen_45dp"
+                                app:slider_locked="false"
+                                app:text="@string/finish_order"
+                                app:text_size="@dimen/text_size_16"
+                                app:text_style="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tmp_view3"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_1dp"
+                            android:layout_below="@+id/request_accept_bt_rider_layout"
+                            android:layout_marginLeft="@dimen/dimen_5dp"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_marginRight="@dimen/dimen_5dp"
+                            android:background="#7A969696"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/cardinquiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layall"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/buttonroundlightgreen"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgone"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/tvTxt"
+                            android:layout_gravity="center"
+                            android:src="@drawable/gone" />
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:text="Booking Inquiry"
+                            android:textSize="15sp" />
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/tvroundtrip1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/buttonroundgreen"
+                            android:gravity="right"
+                            android:paddingLeft="7dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="7dp"
+                            android:paddingBottom="2dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="9dp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layinquiry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iviamge"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/llAccept"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/button_selectorgreen"
+                                android:gravity="center">
+
+                                <com.kamaii.partner.utils.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/ic_right_white"
+                                    android:drawablePadding="5dp"
+                                    android:text="@string/accept"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llDecline"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/button_selector3"
+                                android:gravity="center">
+
+                                <com.kamaii.partner.utils.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/ic_close_white"
+                                    android:drawablePadding="5dp"
+                                    android:text="@string/decline"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/vone"
+                    android:layout_width="2dp"
+                    android:layout_height="105dp"
+                    android:layout_below="@+id/cardinquiry"
+                    android:layout_marginLeft="35dp"
+                    android:background="@color/light_grey"
+                    android:visibility="gone">
+
+                </View>
+
+
+                <FrameLayout
+
+                    android:id="@+id/cardaccept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardinquiry"
+                    android:layout_marginTop="95dp"
+                    android:background="@drawable/buttonroundlightgreen"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imgtwo"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_below="@+id/tvTxt"
+                                android:layout_gravity="center"
+                                android:src="@drawable/gtwo" />
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="6dp"
+                                android:layout_weight="1"
+                                android:text="Booking Accept"
+                                android:textSize="15sp" />
+
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:id="@+id/tvnavigation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/buttonroundgblue"
+                                android:gravity="right"
+                                android:paddingLeft="7dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="7dp"
+                                android:paddingBottom="2dp"
+                                android:text="Navigation"
+                                android:textColor="@color/white"
+                                android:textSize="9dp"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/layaccpet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/llACDE"
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:id="@+id/llStart"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="0.5"
+                                    android:background="@drawable/button_selectorgreen"
+                                    android:gravity="center"
+                                    android:visibility="gone">
+
+                                    <com.kamaii.partner.utils.CustomTextViewBold
+
+                                        android:id="@+id/txtstart"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:drawableLeft="@drawable/ic_start_job"
+                                        android:drawablePadding="6dp"
+                                        android:gravity="center"
+                                        android:text="@string/start_job1"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:id="@+id/txtarivaltimer"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/circletimer"
+                                    android:gravity="center"
+                                    android:text="5:00"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="11dp"
+                                    android:visibility="gone">
+
+                                </TextView>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+                <View
+
+                    android:id="@+id/vtwo"
+                    android:layout_width="2dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/cardaccept"
+                    android:layout_marginLeft="35dp"
+                    android:background="@color/light_grey"
+                    android:visibility="gone">
+
+                </View>
+
+
+                <View
+
+                    android:layout_width="2dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="35dp"
+                    android:background="@color/light_grey"
+                    android:visibility="gone">
+
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/cardpaymnet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/buttonroundlightgreen"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgfour"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/tvTxt"
+                        android:layout_gravity="center"
+                        android:src="@drawable/gfour" />
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:text="Payment Details"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</layout>

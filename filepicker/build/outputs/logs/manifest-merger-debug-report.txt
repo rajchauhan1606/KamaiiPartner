@@ -1,0 +1,109 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:1:1-41:12
+	package
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:2:5-40
+		INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+		INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:1:1-41:12
+		INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:1:1-41:12
+		INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:3:5-81
+	android:name
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:3:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:4:5-80
+	android:name
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:4:22-77
+application
+ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:6:5-40:19
+	android:supportsRtl
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:8:9-35
+	android:allowBackup
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:7:9-35
+activity#com.webknight.filemanager.activity.ImagePickActivity
+ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:10:9-13:57
+	android:screenOrientation
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:12:13-49
+	android:theme
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:13:13-54
+	android:name
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:11:13-55
+activity#com.webknight.filemanager.activity.ImageBrowserActivity
+ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:15:9-18:51
+	android:screenOrientation
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:16:13-49
+	android:hardwareAccelerated
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:18:13-48
+	android:theme
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:17:13-54
+	android:name
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:15:19-64
+activity#com.webknight.filemanager.activity.VideoPickActivity
+ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:20:9-22:57
+	android:screenOrientation
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:21:13-49
+	android:theme
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:22:13-54
+	android:name
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:20:19-61
+activity#com.webknight.filemanager.activity.AudioPickActivity
+ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:24:9-26:57
+	android:screenOrientation
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:25:13-49
+	android:theme
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:26:13-54
+	android:name
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:24:19-61
+activity#com.webknight.filemanager.activity.NormalFilePickActivity
+ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:28:9-30:57
+	android:screenOrientation
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:29:13-49
+	android:theme
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:30:13-54
+	android:name
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:28:19-66
+provider#androidx.core.content.FileProvider
+ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:31:9-39:20
+	android:grantUriPermissions
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:35:13-47
+	android:authorities
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:33:13-60
+	android:exported
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:32:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:36:13-38:54
+	android:resource
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:38:17-51
+	android:name
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:37:17-67
+uses-sdk
+INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+		INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+		ADDED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+		INJECTED from D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml

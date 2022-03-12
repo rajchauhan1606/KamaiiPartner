@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_10dp">
+
+    <com.kamaii.partner.utils.CustomTextViewBold
+        android:id="@+id/add_recycle_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELIVERES TO"
+        android:textColor="@color/pink_color"
+        android:textSize="@dimen/dimen_12dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/delete_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_delete_address" />
+
+    <LinearLayout
+        android:id="@+id/add_recycle_li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_recycle_txt">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_done_right"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dimen_10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dimen_5dp">
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/add_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:text=""
+                android:textColor="@color/dark_blue_color"/>
+
+            <com.kamaii.partner.utils.CustomTextView
+                android:id="@+id/address_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="14dp"
+                android:maxLines="5"
+                android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/add_recycle_li"
+        android:layout_marginTop="10dp"
+        android:background="#d8d8d8" />
+</RelativeLayout>

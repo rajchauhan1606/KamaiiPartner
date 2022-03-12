@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_10"
+        android:background="@drawable/custom_card_top_radious_background_20dp">
+
+        <RelativeLayout
+            android:id="@+id/request_dialog_toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/custom_card_top_radious_background_20dp">
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/request_tvtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_toLeftOf="@+id/request_rider_dialog_close"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/requests_for_rider"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/request_rider_dialog_close"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/margin_10"
+                android:src="@drawable/ic_close" />
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/request_dialog_toolbar_title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rider_request_dialog_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/button_request_linear"
+                    android:layout_below="@+id/request_dialog_toolbar_title" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/button_request_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nested_scroll"
+            android:orientation="vertical">
+
+            <com.ncorti.slidetoact.SlideToActView
+                android:id="@+id/request_rider_dialog_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rider_request_dialog_rv"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/pad_15"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginBottom="5dp"
+                app:area_margin="2dp"
+                app:border_radius="7dp"
+                app:inner_color="@color/white"
+                app:outer_color="@color/dark_blue_color"
+                app:slider_height="@dimen/dimen_45dp"
+                app:slider_locked="false"
+                app:text="Confirm"
+                app:text_size="@dimen/text_size_16"
+                app:text_style="bold" />
+
+            <com.ncorti.slidetoact.SlideToActView
+                android:id="@+id/popupstartnew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rider_request_dialog_rv"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/pad_15"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone"
+                app:area_margin="2dp"
+                app:border_radius="7dp"
+                app:inner_color="@color/white"
+                app:outer_color="#5eb701"
+                app:slider_height="@dimen/dimen_45dp"
+                app:slider_locked="false"
+                app:text="Start Preparation"
+                app:text_size="@dimen/text_size_16"
+                app:text_style="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.activity.ContactListActivity">
+
+    <RelativeLayout
+        android:id="@+id/contact_header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/headergradient">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+            android:id="@+id/tvNameHedar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/add_services"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/child_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_header"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="@dimen/dimen_10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/layrgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtlocation"
+                            android:orientation="horizontal">
+
+                            <RadioGroup
+                                android:id="@+id/contactlist_radiogroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radio_favourate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radio_btn_selectedleft"
+                                    android:button="@android:color/transparent"
+                                    android:checked="false"
+                                    android:gravity="center_horizontal"
+                                    android:padding="5dp"
+                                    android:paddingTop="@dimen/margin_10"
+                                    android:paddingBottom="@dimen/margin_10"
+                                    android:text="@string/auto"
+                                    android:textColor="@color/white"/>
+
+                                <RadioButton
+                                    android:id="@+id/radio_contact"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/radio_btn_unselected_right"
+                                    android:button="@android:color/transparent"
+                                    android:checked="true"
+                                    android:gravity="center_horizontal"
+                                    android:padding="5dp"
+                                    android:paddingTop="@dimen/margin_10"
+                                    android:paddingBottom="@dimen/margin_10"
+                                    android:text="@string/manual"
+                                    android:textColor="@color/black" />
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#EBEBEB"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="@dimen/margin_10"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/action_bar_menus"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/custom_relative_curved_background"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <com.kamaii.partner.utils.CustomEditText
+                            android:id="@+id/contact_list_svSearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:drawableRight="@drawable/ic_search"
+                            android:gravity="center_vertical"
+                            android:hint="@string/search_referred_friend"
+                            android:maxLines="1"
+                            android:backgroundTint="#EBEBEB"
+                            android:background="@drawable/custom_relative_curved_background"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:paddingTop="@dimen/dimen_5dp"
+                            android:paddingRight="@dimen/dimen_10dp"
+                            android:paddingBottom="@dimen/dimen_5dp"
+                            android:textColorHint="@color/black"
+                            android:textSize="16sp" />
+
+                        <androidx.appcompat.widget.SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:paddingLeft="3dp"
+                            android:visibility="gone"
+                            app:defaultQueryHint="Search"
+                            app:iconifiedByDefault="false"
+                            app:theme="@style/AppSearchView">
+
+
+                        </androidx.appcompat.widget.SearchView>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@+id/llDate"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"></View>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="none"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/cardview_top_curved_bg"
+                        android:backgroundTint="#F8FAFB"
+                        app:cardElevation="0dp">
+
+                        <com.kamaii.partner.utils.ExpandableHeightGridView
+                            android:id="@+id/rv_contactlist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#F8FAFB"
+                            tools:listitem="@layout/custom_contactlist_layout"
+                            android:screenReaderFocusable="false"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:verticalSpacing="@dimen/dimen_10dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

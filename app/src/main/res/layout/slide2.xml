@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/margin_10"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@drawable/custom_card_relative_background"
+                android:scaleType="fitXY"
+/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:id="@+id/b_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Business Name"
+                    android:paddingRight="@dimen/margin_10"
+                    android:textColor="@color/pink_color"
+                    android:visibility="gone"
+                    android:textSize="17dp" />
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:id="@+id/business_card_partner_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="@dimen/margin_10"
+                    android:gravity="end"
+                    android:text="Partner Name"
+                    android:textColor="@color/dark_blue_color"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="120dp"
+                    android:layout_height="2dp"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:background="@color/timercolor" />
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:id="@+id/business_services_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/margin_10"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:text="My Business Services"
+                    android:textColor="@color/timercolor"
+                    android:textSize="@dimen/pad_15" />
+
+                <ListView
+                    android:id="@+id/slide2_listview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/white"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_alignParentRight="true"
+                    tools:listitem="@layout/businesscard_listview_recycle_layout" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

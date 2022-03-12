@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/address_curved_relative_white_layout"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/margin_10">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/pad_20"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:text="@string/terms_condition"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/margin_10"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_payment_done_green"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <LinearLayout
+                    android:id="@+id/gujaratibtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_custom_button"
+                    android:padding="@dimen/dimen_10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gujarati"
+                        android:gravity="center_horizontal"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_16"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/englishbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_custom_button"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="English"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_16" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

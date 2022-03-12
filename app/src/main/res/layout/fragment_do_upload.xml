@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layselectcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <com.kamaii.partner.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Category"
+            android:textColor="@color/black"
+            android:textSize="11dp">
+
+        </com.kamaii.partner.utils.CustomTextView>
+
+        <com.kamaii.partner.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" *"
+            android:textColor="@color/dark_red">
+
+        </com.kamaii.partner.utils.CustomTextView>
+    </LinearLayout>
+
+    <com.kamaii.partner.utils.CustomTextViewBold
+        android:id="@+id/tvcat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableRight="@drawable/ic_drop_down"
+        android:gravity="center_vertical"
+        android:text="@string/all_categories"
+        android:textSize="16sp" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Information"
+                    android:textSize="16sp">
+
+                </com.kamaii.partner.utils.CustomTextViewBold>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <com.kamaii.partner.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City"
+                        android:textColor="@color/black"
+                        android:textSize="11dp">
+
+                    </com.kamaii.partner.utils.CustomTextView>
+
+                    <com.kamaii.partner.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" *"
+                        android:textColor="@color/dark_red">
+
+                    </com.kamaii.partner.utils.CustomTextView>
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:elevation="5dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <Spinner
+                        android:id="@+id/spicity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Spinner>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <com.kamaii.partner.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aadhar Card"
+                        android:textColor="@color/black"
+                        android:textSize="11dp">
+
+                    </com.kamaii.partner.utils.CustomTextView>
+
+                    <com.kamaii.partner.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" *"
+                        android:textColor="@color/dark_red">
+
+                    </com.kamaii.partner.utils.CustomTextView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:elevation="5dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="3dp">
+
+
+                        <ImageView
+                            android:id="@+id/layaafront"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/noimagetwo"
+                            android:scaleType="centerCrop">
+
+                        </ImageView>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:elevation="5dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="3dp">
+
+                        <ImageView
+                            android:id="@+id/layaaback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/noimagetwo"
+                            android:orientation="horizontal"
+                            android:scaleType="centerCrop">
+
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layallrcbook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Car RC Book"
+                            android:textColor="@color/black"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" *"
+                            android:textColor="@color/dark_red">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#FFFFFF"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+
+                            <ImageView
+                                android:id="@+id/layrcfront"
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/noimagetwo"
+                                android:scaleType="centerCrop">
+
+                            </ImageView>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#FFFFFF"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+                            <ImageView
+                                android:id="@+id/layrcback"
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/noimagetwo"
+                                android:orientation="horizontal"
+                                android:scaleType="centerCrop">
+
+                            </ImageView>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layalldlicence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Driving Licence"
+                            android:textColor="@color/black"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" *"
+                            android:textColor="@color/dark_red">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#FFFFFF"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+
+                            <ImageView
+                                android:id="@+id/laydrivingfront"
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/noimagetwo"
+                                android:scaleType="centerCrop">
+
+                            </ImageView>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#FFFFFF"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+                            <ImageView
+                                android:id="@+id/laydrivingback"
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/noimagetwo"
+                                android:orientation="horizontal"
+                                android:scaleType="centerCrop">
+
+                            </ImageView>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <com.kamaii.partner.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pan Card"
+                        android:textColor="@color/black"
+                        android:textSize="11dp">
+
+                    </com.kamaii.partner.utils.CustomTextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:elevation="5dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="3dp">
+
+                        <ImageView
+                            android:id="@+id/laypancard"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/noimagetwo"
+                            android:orientation="vertical"
+                            android:scaleType="centerCrop">
+
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:elevation="5dp"
+                        android:visibility="invisible"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="3dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/noimagetwo"
+                            android:orientation="horizontal"
+                            android:scaleType="centerCrop">
+
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/laycarnformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Car Information"
+                        android:textSize="16sp">
+
+                    </com.kamaii.partner.utils.CustomTextViewBold>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Choose Car Model Name"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" *"
+                                android:textColor="@color/dark_red">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+                        </LinearLayout>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#FFFFFF"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+                            <Spinner
+                                android:id="@+id/spicarmodelname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                            </Spinner>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Car Category"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" *"
+                                android:textColor="@color/dark_red">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+                        </LinearLayout>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#FFFFFF"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+                            <Spinner
+                                android:id="@+id/spicarmcategory"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                            </Spinner>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Car Number"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+
+
+                        </LinearLayout>
+
+                        <com.kamaii.partner.utils.CustomEditText
+                            android:id="@+id/etcarno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_car_number"
+                            android:inputType="textCapCharacters"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textAllCaps="true" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Car Insurance"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                app:cardBackgroundColor="#FFFFFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:id="@+id/layinsuarnce"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/noimagetwo"
+                                    android:orientation="vertical"
+                                    android:scaleType="centerCrop">
+
+                                </ImageView>
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                android:visibility="invisible"
+                                app:cardBackgroundColor="#FFFFFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/noimagetwo"
+                                    android:orientation="horizontal"
+                                    android:scaleType="centerCrop">
+
+                                </ImageView>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Car Permit"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                android:padding="3dp"
+                                app:cardBackgroundColor="#FFFFFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:id="@+id/laycarpermit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/noimagetwo"
+                                    android:orientation="vertical"
+                                    android:scaleType="centerCrop">
+
+                                </ImageView>
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                android:visibility="invisible"
+                                app:cardBackgroundColor="#FFFFFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="90dp"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/noimagetwo"
+                                    android:orientation="horizontal"
+                                    android:scaleType="centerCrop">
+
+                                </ImageView>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Police Verification"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                app:cardBackgroundColor="#FFFFFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:id="@+id/laypoliceverification"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/noimagetwo"
+                                    android:orientation="vertical"
+                                    android:scaleType="centerCrop">
+
+                                </ImageView>
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                android:visibility="invisible"
+                                app:cardBackgroundColor="#FFFFFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="90dp"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/noimagetwo"
+                                    android:orientation="horizontal"
+                                    android:scaleType="centerCrop">
+
+                                </ImageView>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Selfie with Car Photo"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:textColor="@color/dark_red"
+                                android:textSize="11dp">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                app:cardBackgroundColor="#FFFFFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:id="@+id/laycarphoto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/noimagetwo"
+                                    android:orientation="vertical"
+                                    android:scaleType="centerCrop">
+
+                                </ImageView>
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                android:visibility="invisible"
+                                app:cardBackgroundColor="#FFFFFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="90dp"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/noimagetwo"
+                                    android:orientation="horizontal"
+                                    android:scaleType="centerCrop">
+
+                                </ImageView>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Owner Photo"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:textColor="@color/dark_red"
+                                android:textSize="11dp">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                app:cardBackgroundColor="#FFFFFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:id="@+id/layownerphoto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/noimagetwo"
+                                    android:orientation="vertical"
+                                    android:scaleType="centerCrop">
+
+                                </ImageView>
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                android:visibility="invisible"
+                                app:cardBackgroundColor="#FFFFFF"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="90dp"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/noimagetwo"
+                                    android:orientation="horizontal"
+                                    android:scaleType="centerCrop">
+
+                                </ImageView>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Selfie With Photo">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+
+
+                            <ImageView
+                                android:id="@+id/layselfie"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:adjustViewBounds="true"
+
+                                android:background="@drawable/noimagetwo"
+                                android:scaleType="centerCrop">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Choose Booking"
+                                android:textColor="@color/black"
+                                android:textSize="11dp">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:textColor="@color/dark_red"
+                                android:textSize="11dp">
+
+                            </com.kamaii.partner.utils.CustomTextView>
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/checkone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:checked="false"
+                            android:text="Daily City">
+
+                        </CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/checktwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:checked="false"
+                            android:text="Local Rental">
+
+                        </CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/checkthree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:checked="false"
+                            android:text="Out Station">
+
+                        </CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/checkfour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:checked="false"
+                            android:text="Prime Car (SUV, 7 Seater)">
+
+                        </CheckBox>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Bank Information"
+                    android:textSize="16sp">
+
+                </com.kamaii.partner.utils.CustomTextViewBold>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bank Name"
+                            android:textColor="@color/black"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/dark_red"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+                    </LinearLayout>
+
+                    <com.kamaii.partner.utils.CustomEditText
+                        android:id="@+id/etbankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_bank_name"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:text="" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beneficiary Name"
+                            android:textColor="@color/black"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/dark_red"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+                    </LinearLayout>
+
+                    <com.kamaii.partner.utils.CustomEditText
+                        android:id="@+id/etBenificiaryName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_beneficiary_name"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:text="" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account Number"
+                            android:textColor="@color/black"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/dark_red"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+                    </LinearLayout>
+
+                    <com.kamaii.partner.utils.CustomEditText
+                        android:id="@+id/etaccoutno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_account_number"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:text="" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IFSC Code"
+                            android:textColor="@color/black"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/dark_red"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+                    </LinearLayout>
+
+
+                    <com.kamaii.partner.utils.CustomEditText
+                        android:id="@+id/etifsc_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_ifsc_code"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:text="" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Branch"
+                            android:textColor="@color/black"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/dark_red"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+                    </LinearLayout>
+
+                    <com.kamaii.partner.utils.CustomEditText
+                        android:id="@+id/etbranchcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_branch"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:text="" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cancel Cheque Copy"
+                            android:textColor="@color/black"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/dark_red"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:elevation="5dp"
+                            app:cardBackgroundColor="#FFFFFF"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+                            <ImageView
+                                android:id="@+id/laycancelcheque"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/noimagetwo"
+                                android:orientation="vertical"
+                                android:scaleType="centerCrop">
+
+                            </ImageView>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:elevation="5dp"
+                            android:visibility="invisible"
+                            app:cardBackgroundColor="#FFFFFF"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/noimagetwo"
+                                android:orientation="horizontal"
+                                android:scaleType="centerCrop">
+
+                            </ImageView>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reference Name and Number"
+                            android:textColor="@color/black"
+                            android:textSize="11dp">
+
+                        </com.kamaii.partner.utils.CustomTextView>
+
+
+                    </LinearLayout>
+
+
+                    <com.kamaii.partner.utils.CustomEditText
+                        android:id="@+id/etrefernamenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_reference_name_and_number"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/laymsg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="220dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:text="@string/documentmsg"
+                android:textColor="@color/green"
+                android:visibility="gone">
+
+            </com.kamaii.partner.utils.CustomTextViewBold>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonroundgblue"
+        android:text="@string/submit"
+        android:textColor="@color/white">
+
+    </Button>
+
+
+</LinearLayout>

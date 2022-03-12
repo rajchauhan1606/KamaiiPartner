@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:id="@+id/img_priview"
+            android:scaleType="fitXY"
+            android:src="@drawable/dummyuser_image"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+
+        </ImageView>
+
+
+
+
+
+    </LinearLayout>

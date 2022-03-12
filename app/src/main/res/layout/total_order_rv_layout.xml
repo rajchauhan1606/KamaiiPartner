@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/total_rv_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_10">
+
+            <RelativeLayout
+                android:id="@+id/forward_arraow_img_rel"
+                android:layout_width="wrap_content"
+                android:paddingTop="@dimen/margin_10"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/forward_arraow_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_arrow_down"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:paddingLeft="@dimen/margin_10"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:id="@+id/prd_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/forward_arraow_img_rel"
+                        android:layout_centerVertical="true"
+                        android:text="Gujarati Thali Small"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_14" />
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:id="@+id/prd_qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/prd_name"
+                        android:layout_centerVertical="true"
+                        android:text="09"
+                        android:textColor="@color/pink_color"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <com.kamaii.partner.utils.CustomTextView
+                    android:id="@+id/order_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prd_name"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_toRightOf="@+id/forward_arraow_img_rel"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text=""
+                    android:textColor="#333333" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/orderdetails_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_toRightOf="@+id/forward_arraow_img_rel"
+                    android:layout_below="@+id/order_products"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_total_order"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/total_rv_linear"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@color/gray_wallet" />
+    </RelativeLayout>
+</layout>

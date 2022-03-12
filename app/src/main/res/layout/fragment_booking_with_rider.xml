@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".ui.fragment.NewBookings">
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rlSearch"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp">
+
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/svSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search_back"
+                    android:focusable="false"
+                    app:defaultQueryHint="@string/search_by_cus"
+                    app:iconifiedByDefault="false"
+
+                    app:theme="@style/AppSearchView">
+
+
+                </androidx.appcompat.widget.SearchView>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlSearch">
+
+
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/tvNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_booking_found"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+
+            <!-- <com.mapbox.mapboxsdk.maps.MapView
+
+                 android:id="@+id/mapView"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 mapbox:mapbox_cameraZoom="18"/>-->
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.google.android.gms.maps.MapView>
+
+
+            <pl.bclogic.pulsator4droid.library.PulsatorLayout
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/pulsator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:pulse_count="4"
+                app:pulse_duration="4000"
+                app:pulse_repeat="0"
+                app:pulse_color="@color/lightgreenfour"
+                app:pulse_startFromScratch="false"
+                app:pulse_interpolator="Linear">
+            </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+
+
+
+
+            <LinearLayout
+
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/lay"
+                android:background="@color/lightgreenone"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+
+
+
+                <LinearLayout
+
+                    android:visibility="gone"
+                    android:id="@+id/layfindtrip"
+                    android:background="@color/textcolor"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ProgressBar
+                        android:layout_marginBottom="-8dp"
+                        android:layout_marginTop="-6dp"
+                        android:id="@+id/progress"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="true"
+                        android:indeterminateBehavior="repeat"
+                        />
+
+
+                    <LinearLayout
+
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp">
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Searching for Booking"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+
+
+                    android:background="@color/chat_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp">
+
+                </View>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_gravity="bottom"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    tools:cardCornerRadius="5dp"
+                    tools:cardElevation="2dp">
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layonline"
+                        android:background="@color/lightgreenthree"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical">
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:paddingTop="3dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:text=""
+                            android:id="@+id/txtoffonline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                        </com.kamaii.partner.utils.CustomTextViewBold>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
+                android:background="@color/white"
+                android:id="@+id/rvBooking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:id="@+id/layaccpet"
+                android:background="@color/lightgreenone"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:id="@+id/txtptype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buttonroundgblue"
+                        android:gravity="right"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="7dp"
+                        android:paddingBottom="2dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="9dp" />
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/dimen_10dp"
+                        android:padding="@dimen/dimen_10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/buttonroundgreentwo"
+                            android:textColor="@color/white"
+                            android:id="@+id/txtcat"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:text=""
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:padding="@dimen/dimen_10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:padding="5dp"
+                            android:id="@+id/tvroundtrip"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/buttonroundorangetwo"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_gravity="bottom"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    tools:cardBackgroundColor="@color/white"
+                    tools:cardCornerRadius="5dp"
+                    tools:cardElevation="2dp">
+
+
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+
+                            <TextView
+                                android:textSize="18dp"
+                                android:gravity="left"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/txtkm"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="">
+
+                            </TextView>
+
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+
+                                    android:textStyle="bold"
+                                    android:id="@+id/txtarivaltimer"
+                                    android:layout_width="43dp"
+                                    android:layout_height="43dp"
+                                    android:background="@drawable/circletimer"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="@color/colorPrimary">
+
+                                </TextView>
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:textSize="18dp"
+                                android:id="@+id/txtdistancetime"
+                                android:gravity="right"
+                                android:layout_gravity="center_vertical|right"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="">
+
+                            </TextView>
+                        </FrameLayout>
+
+
+
+                        <View
+
+                            android:id="@+id/vone"
+                            android:background="@color/light_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp">
+
+                        </View>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+
+
+                            <TextView
+                                android:layout_marginTop="14dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pickup Location">
+
+                            </TextView>
+
+                            <LinearLayout
+
+                                android:layout_marginTop="14dp"
+                                android:id="@+id/llLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ivArtist"
+                                android:gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_placeholder" />
+
+                                <com.kamaii.partner.utils.CustomTextView
+                                    android:maxLines="3"
+                                    android:id="@+id/tvLocation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text=""
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+
+                                android:id="@+id/layinquiry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iviamge"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/llAccept"
+                                        android:layout_width="0dp"
+                                        android:layout_height="50dp"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/button_selectorgreen"
+                                        android:gravity="center">
+
+                                        <com.kamaii.partner.utils.CustomTextViewBold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/accept"
+                                            android:textColor="@color/white"
+                                            android:textSize="15dp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/llDecline"
+                                        android:layout_width="0dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/button_selector3"
+                                        android:gravity="center">
+
+                                        <com.kamaii.partner.utils.CustomTextViewBold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Pass"
+                                            android:textColor="@color/white"
+                                            android:textSize="15dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</layout>

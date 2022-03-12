@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/laytitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_back_blue">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:id="@+id/ctvbTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toLeftOf="@+id/tveditcancel"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text="@string/update_service_type"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"  />
+
+                <ImageView
+                    android:id="@+id/tveditcancel"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_12dp"
+                    android:src="@drawable/ic_close"
+                    card_view:tint="@color/white" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+                <RadioGroup
+
+                    android:id="@+id/radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="-6dp">
+
+                    <RadioButton
+                        android:id="@+id/radioseditquantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:textSize="15dp"
+                        android:buttonTint="@color/dark_blue_color"
+                        android:text="Quantity"
+                        android:textColor="@color/dark_blue_color" />
+
+                    <RadioButton
+                        android:id="@+id/radioyeditdays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="KM"
+                        android:textSize="15dp"
+                        android:buttonTint="@color/dark_blue_color"
+                        android:textColor="@color/dark_blue_color" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layroundtrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:id="@+id/round_ti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:text="Round Trip"
+                    android:textColor="@color/dark_blue_color"
+                    android:textSize="16sp" />
+
+
+                <CheckBox
+                    android:id="@+id/cbshipping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/simple_checkbox_bg"
+                    android:backgroundTint="@color/dark_blue_color"
+                    android:buttonTint="@color/dark_blue_color"
+                    android:checked="false" />
+            </LinearLayout>
+
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/ma_ti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left|center_vertical"
+                android:text="@string/maximum_km_or_qty"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/text_size_16"
+                android:layout_marginTop="@dimen/margin_10"/>
+
+            <com.kamaii.partner.utils.CustomEditText
+                android:id="@+id/etvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_value"
+                android:inputType="number"
+                android:textCursorDrawable="@color/dark_blue_color"
+                android:singleLine="true"
+                android:text=""
+                android:focusable="true"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textSize="@dimen/text_size_16"
+                android:background="@drawable/edittext_underline"
+                android:textColor="@color/pink_color"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btnlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scroll"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen_30dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="30dp"
+            android:orientation="horizontal">
+
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Cancel"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/tveditservice"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/pink_drawable"
+                android:gravity="center"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

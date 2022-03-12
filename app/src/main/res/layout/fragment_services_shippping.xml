@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.ImageGallery">
+
+    <RelativeLayout
+        android:id="@+id/rlView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar_menus">
+
+
+        <ViewFlipper
+            android:id="@+id/viewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_services_cat"
+                android:background="@drawable/rectangle_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></androidx.recyclerview.widget.RecyclerView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_services_sub_car"
+                android:background="@drawable/rectangle_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></androidx.recyclerview.widget.RecyclerView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_services"
+                android:background="@drawable/rectangle_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></androidx.recyclerview.widget.RecyclerView>
+        </ViewFlipper>
+    </RelativeLayout>
+
+    <com.kamaii.partner.utils.CustomTextViewBold
+        android:id="@+id/tvNotFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_service_found"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rel_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10">
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gujarati Thali Small x "
+                android:layout_centerVertical="true"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/dp_14" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/item_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_toRightOf="@+id/item_name"
+                android:text="1"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:textColor="@color/pink_color" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rel_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_5dp"
+
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10">
+
+            <com.kamaii.partner.utils.CustomTextView
+                android:id="@+id/order_amt_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:text="Order Amount"
+                android:textColor="#173143" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/order_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="asdc"
+                android:textColor="@color/green" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rel_4"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10">
+
+            <com.kamaii.partner.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:text="Preparation Time"
+                android:textColor="#173143" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/preparation_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="@color/dark_blue_color" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rel_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/dimen_5dp"
+
+            android:layout_marginRight="@dimen/margin_10">
+
+            <com.kamaii.partner.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:text="Delivery Time"
+                android:textColor="#173143" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/delivery_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="@color/dark_blue_color" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/order_line_view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rel_2"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@color/light_grey" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/laytitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/ctvbTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Cancel Reason"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="17sp"
+                android:layout_toLeftOf="@+id/tvdCancelreason"/>
+
+            <ImageView
+                android:id="@+id/tvdCancelreason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_12dp"
+                android:src="@drawable/ic_close" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <com.kamaii.partner.utils.ExpandableHeightGridView
+                android:id="@+id/cancell_reason_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:verticalSpacing="@dimen/margin_10"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+
+
+<!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="Car Problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                </com.kamaii.partner.utils.CustomTextViewBold>
+
+
+                <CheckBox
+                    android:buttonTint="@color/black"
+                    android:id="@+id/checkone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="Fuel Problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                </com.kamaii.partner.utils.CustomTextViewBold>
+
+
+                <CheckBox
+                    android:buttonTint="@color/black"
+                    android:id="@+id/checktwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="Customer Problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                </com.kamaii.partner.utils.CustomTextViewBold>
+
+
+                <CheckBox
+                    android:buttonTint="@color/black"
+                    android:id="@+id/checkthree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="Language Problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                </com.kamaii.partner.utils.CustomTextViewBold>
+
+
+                <CheckBox
+                    android:buttonTint="@color/black"
+                    android:id="@+id/checkfour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="Many Customer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                </com.kamaii.partner.utils.CustomTextViewBold>
+
+
+                <CheckBox
+                    android:buttonTint="@color/black"
+                    android:id="@+id/checkfive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="My Reason Not Listed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                </com.kamaii.partner.utils.CustomTextViewBold>
+
+
+                <CheckBox
+                    android:buttonTint="@color/black"
+                    android:id="@+id/checksix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+            </LinearLayout>
+
+            <com.kamaii.partner.utils.CustomEditText
+                 android:visibility="gone"
+                    android:inputType="textMultiLine"
+                    android:id="@+id/etd_reason"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/gray"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/please_enter_reason"
+                    android:text="" />
+-->
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btnlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scroll"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="30dp"
+            android:orientation="horizontal">
+
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/cancel1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/tvdAddreason"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/dialog_btn_blue"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</layout>

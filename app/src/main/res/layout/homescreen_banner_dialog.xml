@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Training Session"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/banner_dialog_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:src="@drawable/ic_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_dialog"
+        android:orientation="vertical"
+        android:background="@drawable/custom_card_relative_background">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pagerhome"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/custom_card_relative_background"
+            android:scrollbars="none" />
+
+        <com.afollestad.viewpagerdots.DotsIndicator
+            android:id="@+id/dots"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_24"
+            app:dot_tint="@color/pink_color" />
+    </LinearLayout>
+
+
+</RelativeLayout>

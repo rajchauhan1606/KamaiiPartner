@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingRight="@dimen/margin_10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/pad_20"
+                        android:layout_toLeftOf="@+id/change_address_btn"
+                        android:text="Full Name"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_14" />
+
+                    <com.kamaii.partner.utils.CustomEditText
+                        android:id="@+id/full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:keyboardNavigationCluster="false"
+                        android:text=""
+                        android:background="@null"
+                        android:paddingBottom="@dimen/dimen_5dp"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_14" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_wallet"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/pad_20"
+                            android:layout_toLeftOf="@+id/mydetail_change_address_btn"
+                            android:text="@string/your_address"
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="@dimen/dp_14" />
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/mydetail_change_address_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="CHANGE"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/dp_14" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:id="@+id/block_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/pickup_location_icon"
+                            android:maxLines="5"
+                            android:paddingRight="@dimen/pad_20"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:textSize="14sp" />
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:id="@+id/tvLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/block_no"
+                            android:layout_marginTop="@dimen/dimen_5dp"
+                            android:layout_toRightOf="@+id/pickup_location_icon"
+                            android:maxLines="5"
+                            android:paddingRight="@dimen/pad_20"
+                            android:textColor="@color/black"
+
+                            android:text=""
+                            android:layout_marginBottom="@dimen/dimen_5dp"
+                            android:textSize="14sp" />
+
+                        <com.kamaii.partner.utils.CustomTextView
+                            android:id="@+id/landmark_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvLocation"
+                            android:layout_toRightOf="@+id/pickup_location_icon"
+                            android:maxLines="5"
+                            android:paddingRight="@dimen/pad_20"
+                            android:textColor="@color/black"
+
+                            android:text=""
+                            android:textSize="14sp"
+                            android:paddingBottom="@dimen/dimen_5dp"/>
+
+                    </LinearLayout>
+
+                    <com.kamaii.partner.utils.CustomTextView
+                        android:id="@+id/etLocationD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:keyboardNavigationCluster="false"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_14" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_wallet"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/pad_20"
+                        android:layout_toLeftOf="@+id/change_address_btn"
+                        android:text="Mobile"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_14" />
+
+                    <com.kamaii.partner.utils.CustomTextView
+                        android:id="@+id/mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:keyboardNavigationCluster="false"
+                        android:text=""
+                        android:paddingBottom="@dimen/dimen_5dp"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_14" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_wallet"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/pad_20"
+                        android:layout_toLeftOf="@+id/change_address_btn"
+                        android:text="Email"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_14" />
+
+                    <com.kamaii.partner.utils.CustomEditText
+                        android:id="@+id/email_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:keyboardNavigationCluster="false"
+                        android:text=""
+                        android:paddingBottom="@dimen/dimen_5dp"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_14" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_wallet"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/pad_20"
+                        android:layout_toLeftOf="@+id/change_address_btn"
+                        android:text="Gender"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_14" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbGenderM"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:checked="true"
+                            android:text="@string/male"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbGenderF"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:checked="false"
+                            android:text="@string/female"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbGenderO"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:checked="false"
+                            android:text="@string/other"
+                            android:textSize="12sp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l1"
+                    android:layout_marginLeft="@dimen/pad_20"
+                    android:layout_marginRight="@dimen/pad_20"
+                    android:layout_marginBottom="@dimen/dimen_30dp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/pad_20"
+
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:id="@+id/cancelbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/dark_blue_btn_bg"
+                        android:gravity="center"
+                        android:text="No"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:id="@+id/update_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/custom_blue_curverd_bg"
+                        android:gravity="center"
+                        android:text="Update Profile"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</layout>

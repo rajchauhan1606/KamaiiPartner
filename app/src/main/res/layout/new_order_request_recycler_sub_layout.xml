@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_size_20">
+
+        <View
+
+            android:id="@+id/new_order_tmp_view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:background="@color/light_grey">
+
+        </View>
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+            android:id="@+id/new_order_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_order_tmp_view1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:padding="@dimen/dimen_10dp"
+            android:text="Today`s Lunch Order"
+            android:textColor="@color/pink_color"
+            android:textSize="@dimen/dp_16" />
+
+        <View
+
+            android:id="@+id/new_order_tmp_view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/new_order_title"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@color/light_grey">
+
+        </View>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/new_order_request_item_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_order_tmp_view"
+            android:overScrollMode="never" />
+
+    </RelativeLayout>
+
+</layout>

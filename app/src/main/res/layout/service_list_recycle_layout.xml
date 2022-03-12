@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_marginRight="@dimen/margin_10"
+    android:background="@drawable/custom_relative_curved_background"
+    android:padding="@dimen/margin_10"
+    android:layout_marginBottom="@dimen/margin_10"
+    android:backgroundTint="@color/white">
+
+    <com.kamaii.partner.utils.CustomTextViewBold
+        android:id="@+id/service_recycle_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="asd"
+        android:textSize="@dimen/text_size_16"/>
+
+    <CheckBox
+        android:id="@+id/select_checkbox"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:layout_centerVertical="true"
+        android:button="@drawable/customcheckbox"
+        android:checked="false"
+        android:visibility="visible" />
+    <LinearLayout
+        android:id="@+id/service_recycle_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service_recycle_name">
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+            android:id="@+id/select_service_tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_15" />
+
+        <com.kamaii.partner.utils.CustomTextView
+            android:id="@+id/select_service_tvDiscountPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:padding="2dp"
+            android:text=""
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/service_recycle_price"
+        android:visibility="gone"
+        android:paddingBottom="7dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.kamaii.partner.utils.CustomTextView
+                android:id="@+id/tvdesc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text=""
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/text_size_12" />
+
+            <ImageView
+                android:id="@+id/arrow_desc"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/tvdesc"
+                android:paddingLeft="5dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/forward_arrow" />
+        </LinearLayout>
+
+        <com.kamaii.partner.utils.CustomTextView
+            android:id="@+id/tvdesc23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textSize="@dimen/text_size_12"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</RelativeLayout>

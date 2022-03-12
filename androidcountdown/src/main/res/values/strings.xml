@@ -1,0 +1,35 @@
+<resources>
+    <string name="year" translatable="false">%02d :&#160;</string>
+    <string name="month" translatable="false">%02d :&#160;</string>
+    <string name="week" translatable="false">%02d :&#160;</string>
+    <string name="day" translatable="false">%02dday.</string>
+    <string name="hour" translatable="false">%02dhr.</string>
+    <string name="minute" translatable="false">%02dmin.</string>
+    <string name="second" translatable="false">%02d</string>
+
+    <!--Textual description-->
+    <string name="tyear">%02dY&#160;</string>
+    <string name="tmonth">%02dM&#160;</string>
+    <string name="tweek">%02dW&#160;</string>
+    <string name="tday">%02dday.&#160;</string>
+    <string name="thour">%02dH&#160;</string>
+    <string name="tminute">%02dM&#160;</string>
+    <string name="tsecond">%02dsec. </string>
+
+
+    <!--<string name="year" translatable="false">%02d :&#160;</string>
+    <string name="month" translatable="false">%02d :&#160;</string>
+    <string name="week" translatable="false">%02d :&#160;</string>
+    <string name="day" translatable="false">%02dD :&#160;</string>
+    <string name="hour" translatable="false">%02dH :&#160;</string>
+    <string name="minute" translatable="false">%02dM :&#160;</string>
+    <string name="second" translatable="false">%02d</string>
+
+    <string name="tyear">%02dY&#160;</string>
+    <string name="tmonth">%02dM&#160;</string>
+    <string name="tweek">%02dW&#160;</string>
+    <string name="tday">%02dD&#160;</string>
+    <string name="thour">%02dH&#160;</string>
+    <string name="tminute">%02dM&#160;</string>
+    <string name="tsecond">%02dS </string>-->
+</resources>

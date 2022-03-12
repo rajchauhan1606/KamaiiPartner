@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/child_relative_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/share_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/white_curved_background">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gallery_promotion" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/share_profile_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/share_gallery"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/white_curved_background">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/business_profile2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/share_services_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/share_profile_linear"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/white_curved_background">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/share_services_image" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/birth_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/share_services_linear"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/white_curved_background">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/birth" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/share_ling_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/birth_linear"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/white_curved_background">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/custom_button_white_curved"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="@dimen/dimen_5dp">
+
+                    <com.kamaii.partner.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/share_profile"
+                        android:textAllCaps="true"
+                        android:textColor="#36C5F0"
+                        android:textSize="19dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginBottom="70dp"
+                    android:background="@drawable/custom_button_white_curved"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="@dimen/dimen_5dp">
+
+                    <com.kamaii.partner.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/share_services"
+                        android:textAllCaps="true"
+                        android:textColor="#36C5F0"
+                        android:textSize="19dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

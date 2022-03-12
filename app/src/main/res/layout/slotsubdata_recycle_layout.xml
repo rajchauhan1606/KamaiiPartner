@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="26dp">
+
+
+    <com.kamaii.partner.utils.CustomTextViewBold
+        android:id="@+id/slot_subdata_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/s_li"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/dark_blue_color"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/s_li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_5dp"
+        android:paddingTop="2dp"
+        android:paddingRight="@dimen/dimen_5dp"
+        android:paddingBottom="2dp">
+
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+            android:id="@+id/tvPrices_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/margin_10"
+            android:text="QTY "
+            android:textColor="@color/pink_color"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+            android:id="@+id/slotsub_item_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/blue_border_color"
+            android:textSize="@dimen/dp_14" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

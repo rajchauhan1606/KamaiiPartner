@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kamaii.partner"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Permission to use camera - required -->
+    <!-- Camera features - recommended -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.INTERNAL_SYSTEM_WINDOW"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" /> <!-- <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/> -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:requestLegacyExternalStorage="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".utils.AppController"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:supportsRtl,android:allowBackup,android:theme">
+        <activity
+            android:name=".ui.activity.BankWalletActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ChangeAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.GalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.DeepImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.GalleryDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.BirthdayCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.BusinessCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.AddServicesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.YoutubePlaylistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LocationPermissionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SelectLanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Help"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.BankDocument"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TrainingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PersonalDocumentation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.BusinessDocumentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.DocumentUploadTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.BasicInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ChooseServiceActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".ui.activity.ContactListActivity"
+            android:label="@string/title_activity_contact_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CheckSignInActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ViewMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CustomerViewServiceActivity"
+            android:screenOrientation="portrait" />
+        <!--
+<service
+            android:name=".LocationService"
+            android:enabled="true"
+            android:exported="true" />
+        -->
+        <service
+            android:name=".FloatingWidgetService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".service.ChatHeadService"
+            android:enabled="true"
+            android:exported="false" />
+        <service android:name=".service.MyService" />
+        <!--
+                <service android:name=".service.AppService" android:exported="false" android:enabled="true" android:permission="android.permission.BIND_JOB_SERVICE">
+
+
+                </service>
+        -->
+        <!--
+<service
+            android:exported="true"
+
+            android:name=".service.AppService"
+            android:enabled="true"
+            android:process="@string/submit"
+            />
+        -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".ui.activity.ViewInvoice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.Privacy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.Terms"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.EditPersnoalInfo"
+            android:hardwareAccelerated="true"
+            android:inheritShowWhenLocked="true"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!--
+<provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.kamaii.partner.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities,android:resources">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+        -->
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_ILgsfZCZoFIKMb" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.AppIntro"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.SignInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.BaseActivity"
+            android:hardwareAccelerated="true"
+            android:inheritShowWhenLocked="true"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".utils.MainFragment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.OneTwoOneChat"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.OtpActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CommentOneByOne"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.ForgotPass"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.AddMoney"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PaymetWeb"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.LocationUpdatesService"
+            android:enabled="true"
+            android:exported="true" />
+        <!--
+<receiver
+            android:name=".service.Restarter"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="restartservice" />
+            </intent-filter>
+        </receiver>
+        -->
+        <!--
+<receiver android:name=".MyDeviceWeakUpReceiver">
+            <intent-filter>
+                <action android:name="restart" />
+            </intent-filter>
+        </receiver>
+        -->
+        <service
+            android:name=".service.YourService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

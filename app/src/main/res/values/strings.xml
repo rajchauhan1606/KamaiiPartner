@@ -1,0 +1,544 @@
+<resources>
+    <string name="app_name">Kamaii Partner</string>
+
+
+    <string name="mapbox_access_token">pk.eyJ1IjoibXVsdGlzY29wZSIsImEiOiJja2N2eDNkeTQwOGswMndxbGsyNmsxZ2NqIn0.THAudbj7ZULmoP29oj8GIw</string>
+
+    <string name="bottom_sheet_option_heading">Select Photo</string>
+    <string name="login">Login</string>
+
+    <string name="bottom_sheet_option_camera">Camera</string>
+    <string name="bottom_sheet_option_gallery">Gallery</string>
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="ok">Ok</string>
+    <string name="your_review">Your Review*</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="payment_info">Payment Information</string>
+    <string name="finish_job">Finish Job</string>
+
+    <string name="intro_1">Welcome..</string>
+    <string name="intro_2">Welcome..</string>
+    <string name="intro_3">Welcome..</string>
+    <string name="internet_concation">Please enable your internet connection.</string>
+    <string name="action_camera">Camera</string>
+    <string name="invoice">Invoice</string>
+    <string name="pending">Pending</string>
+    <string name="confirm">Confirmed</string>
+    <string name="acc">Accepted</string>
+    <string name="curent">Current</string>
+    <string name="rej">Rejected</string>
+    <string name="com">Completed</string>
+    <string name="dec">Decline</string>
+    <string name="dec_msg">Are you sure you want to decline this appointment?</string>
+    <string name="acc_msg">Are you sure you want to Accept this appointment?</string>
+    <string name="comp">Complete</string>
+    <string name="close_msg">Are your sure you want to close Kamaii Partner?</string>
+    <string name="yes">YES!</string>
+    <string name="no">NO</string>
+    <string name="skip">Skip</string>
+    <string name="my_profile">My Profile</string>
+    <string name="promotion">My Promotion</string>
+    <string name="select_services">Select Services</string>
+    <string name="serviceee">My Service</string>
+    <string name="select_img">Select Image From</string>
+    <string name="select_pic">Select Picture</string>
+    <string name="jobs_comleted">Orders Completed</string>
+    <string name="completion">Completion</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="rate">Rate</string>
+    <string name="hr">/hr</string>
+    <string name="fix_rate">Fix Rate</string>
+    <string name="fixed_rate">fixed rate</string>
+    <string name="commis_msg"> commission will be added into your hourly rate. It will vary according to category selection. Category rate :</string>
+    <string name="select_cate">Select Category</string>
+    <string name="val_name">Please enter name.</string>
+    <string name="val_location">Please enter location.</string>
+    <string name="val_category">Please enter Category.</string>
+    <string name="val_iid">Please Select Invoice Id.</string>
+    <string name="val_subcatogry">Please enter Sub Category.</string>
+    <string name="val_sublevelcatogry">Please enter Sub Level Category.</string>
+    <string name="val_sname">Please enter Service Name.</string>
+    <string name="validate_des">Please select Service Description.</string>
+    <string name="chats">Chats</string>
+    <string name="val_comment">Please enter comment</string>
+    <string name="val_email">Please enter valid email id.</string>
+    <string name="val_mobile">Please enter Valid mobile No.</string>
+    <string name="val_pass">Password must contain at least six characters.</string>
+    <string name="my_appoin">My Appointments</string>
+    <string name="customer_booking">Current Booking</string>
+    <string name="dec_cpas">Decline</string>
+    <string name="decline_msg">Are you sure you want to decline request?</string>
+    <string name="get_discount">Get Discount</string>
+    <string name="code_copy">Code Copy</string>
+    <string name="referral_msg">Hello, this is my Referral Code</string>
+    <string name="opss_share">Opps!! It seems that you have not installed any sharing app.</string>
+    <string name="support">Support</string>
+    <string name="app_update">About Kamaii</string>
+    <string name="val_title">Please enter title.</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="logout_msg">Are you sure you want to logout?</string>
+    <string name="notifications">Notifications</string>
+    <string name="tvideo">Training Video</string>
+    <string name="addrefer">Add Refer Customer</string>
+    <string name="viewrefer">View Refer Customer</string>
+    <string name="my_earnings">My Earnings</string>
+    <string name="my_promotion">My Business Promotion</string>
+    <string name="earning_graph">Earning Graph</string>
+    <string name="payment">Payment</string>
+    <string name="process_payment">Are you sure want to process your payment?</string>
+    <string name="jobs">Find Jobs</string>
+    <string name="bookings">Order Details</string>
+    <string name="cabbookings">My Orders</string>
+
+    <string name="job_title">Job Title:</string>
+    <string name="date">Date:</string>
+    <string name="val_des">Please enter description.</string>
+    <string name="val_price">Please enter price.</string>
+    <string name="val_pnumber">Please enter Partner Number.</string>
+    <string name="inprogres">Inprogress</string>
+    <string name="reject">Reject</string>
+    <string name="reject_msg">Are you sure you want to reject the application?</string>
+    <string name="start_app">Are you sure do you want to start the application?</string>
+    <string name="start">Start</string>
+    <string name="service">Invoice Id #</string>
+    <string name="Cancel_msg">This booking cancels due to the rider not available or reject your request so If you have debited any amount refund your wallet account. Please try again.</string>
+    <string name="unpaid">Unpaid</string>
+    <string name="paid">Paid</string>
+    <string name="duration">Duration:</string>
+    <string name="solve">Solve</string>
+    <string name="close">Close</string>
+    <string name="sign_up">REGISTER</string>
+    <string name="sign_in">LOG IN</string>
+    <string name="payment1">Payment ?</string>
+    <string name="select_your_payment_mode">Select your payment mode</string>
+    <string name="about">About</string>
+    <string name="qualification">Qualification</string>
+    <string name="comment">Comment</string>
+    <string name="write_your_message">Write your message</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="email_id">Email Id</string>
+    <string name="submit">SUBMIT</string>
+    <string name="apply_code">Apply Code</string>
+    <string name="copy">COPY</string>
+    <string name="invite_friend">Invite Friend</string>
+    <string name="delete">Delete</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Id</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="today_booking">Today`s Order</string>
+    <string name="gender">Gender</string>
+    <string name="password_change">Change Password</string>
+    <string name="signout">Sign Out</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgotten_password">Forgot Password?</string>
+    <string name="didn_t_have_any_account">Don\'t have Kamaii Partner account?</string>
+    <string name="do_you_have_an_account_already">Do you have and account already?</string>
+    <string name="job_id">Job ID:</string>
+    <string name="services_type">Services type:</string>
+    <string name="apply">APPLY</string>
+    <string name="reject1">Reject</string>
+    <string name="start_job">Start Job</string>
+    <string name="inprogress">Inprogress</string>
+    <string name="edit">Edit</string>
+    <string name="complete">Complete</string>
+    <string name="review_by">Review By</string>
+    <string name="add_title">Add Title</string>
+    <string name="enter_title">Enter Title</string>
+
+    <string name="cancel1">Cancel</string>
+    <string name="add">Add</string>
+    <string name="save">Save</string>
+    <string name="apply_job">Apply Job</string>
+    <string name="write_description">Short Description about yourself and your business</string>
+    <string name="address">Address</string>
+
+    <string name="price">Price</string>
+    <string name="add_gallery">Add Gallery</string>
+    <string name="edit_personal_information">Business Information</string>
+    <string name="basic_information">Business Information</string>
+    <string name="select_your_speciality">Select Your Speciality</string>
+    <string name="your_name">Your Name</string>
+    <string name="business_name">Business Name</string>
+    <string name="your_bio">Your Bio</string>
+    <string name="your_city">City</string>
+    <string name="your_country">Your Country</string>
+    <string name="your_location">Your Current Location</string>
+    <string name="add_product">Add Service</string>
+    <string name="product_name">Service Name</string>
+    <string name="add_qualification">Add Qualification</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="select">Select</string>
+    <string name="search_by_job">Search by Job Title</string>
+    <string name="search_by_cus">Search</string>
+    <string name="no_jobs_applied">NO JOBS APPLIED</string>
+    <string name="no_appointment_found">NO APPOINTMENT FOUND</string>
+    <string name="no_jobs_found">NO JOBS FOUND</string>
+    <string name="no_booking_found">NO ORDERS FOUND</string>
+    <string name="no_chat_history_found">NO CHAT HISTORY FOUND</string>
+    <string name="no_notification_found">NO NOTIFICATION FOUND</string>
+    <string name="new_request_found">NEW REQUEST FOUND</string>
+    <string name="working_time">Working Time</string>
+    <string name="decline">Decline</string>
+    <string name="start_job1">Start Job</string>
+    <string name="finish_the_job">Finish The Job</string>
+    <string name="work_in_progress">Work in progress</string>
+    <string name="no_request_found">NO REQUEST FOUND</string>
+    <string name="paid1">Paid</string>
+    <string name="unpaid1">Unpaid</string>
+    <string name="all_jobs">All Jobs</string>
+    <string name="applied_jobs">Applied Jobs</string>
+    <string name="fit_image">FIT IMAGE</string>
+    <string name="square">SQUARE</string>
+    <string name="free">FREE</string>
+    <string name="circle">CIRCLE</string>
+    <string name="this_week">This Week</string>
+    <string name="online_earning">Online Earning</string>
+    <string name="wallet_earning">Wallet Earning</string>
+    <string name="cash_earning">Cash Earning</string>
+    <string name="complete1">Complete %</string>
+    <string name="total_earning">Total Earning</string>
+    <string name="job_done">Complete Job</string>
+    <string name="jobs_done">Complete Jobs</string>
+    <string name="referearning">Refer Earning</string>
+    <string name="banktransfer">Bank Transfer</string>
+    <string name="total_job">Total Order</string>
+    <string name="total_jobs">Total Orders</string>
+    <string name="wallet_amount">Wallet Amount</string>
+    <string name="online_time">Online Hours</string>
+    <string name="request_for_payment">Request For Payment</string>
+    <string name="search_by_invoice">Search by Invoice Id</string>
+    <string name="no_ticket_found">NO TICKET FOUND</string>
+    <string name="job_done_for">Job Done For</string>
+    <string name="no_history_found">NO HISTORY FOUND</string>
+    <string name="select_image">Select Image</string>
+    <string name="my_rate">Service Price</string>
+    <string name="accept">Accept</string>
+    <string name="hour_rate">Hourly Rate</string>
+    <string name="get_your_best_service_from_us">Get your best service from us</string>
+    <string name="gallery">Gallery</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="all">All</string>
+    <string name="debit">Debit</string>
+    <string name="credit">Credit</string>
+    <string name="money">Add Money</string>
+    <string name="add_money">Add Money</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="val_money">Please enter money to add..</string>
+    <string name="ic_wallet">My Wallet</string>
+    <string name="payment_option">Payment Option</string>
+    <string name="delete_quali">Delete Qualification</string>
+    <string name="delete_quali_msg">Are you sure you want to delete this qualification?</string>
+    <string name="delete_gallery">Delete Gallery</string>
+    <string name="delete_gallery_msg">Are you sure you want to delete this image?</string>
+
+    <string name="delete_service">Delete Service</string>
+    <string name="delete_service_msg">Are you sure you want to delete this service?</string>
+
+    <string name="update_qualification">Update Qualification</string>
+    <string name="val_iamg_ad">Please add image first.</string>
+    <string name="val_pass_c">Please enter password between 6-13 digit</string>
+    <string name="val_new_pas">Please enter New Password</string>
+    <string name="val_c_pas">Please enter Confirm Password</string>
+    <string name="val_n_c_pas">Password does not match..!!</string>
+    <string name="other">Other</string>
+    <string name="refer">Refer &amp; Earn</string>
+    <string name="no_gallery_found">No Gallery Found</string>
+    <string name="no_service_found">No Service Found</string>
+    <string name="settings">Settings</string>
+    <string name="update">Update Business Profile</string>
+    <string name="reviews">Review(</string>
+    <string name="try_after">Please try after some time.</string>
+    <string name="val_city">Please enter city.</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="and">and</string>
+    <string name="agreed">Yes, I have read and agreed to </string>
+    <string name="val_description">Please enter description</string>
+    <string name="val_title1">Please enter title</string>
+    <string name="insufficient_balance">you can\'t request for payment because insufficient balance in your wallet</string>
+    <string name="invoice_date">Invoice Date</string>
+    <string name="due_date">Due Date</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="total">Total</string>
+    <string name="view_invoice">View Invoice</string>
+    <string name="home_features">Features</string>
+    <string name="bookings_and_job">Orders &amp; Invoice</string>
+    <string name="personal">Personal</string>
+    <string name="incomplete_profile">Incomplete Profile</string>
+    <string name="incomplete_profile_msg">Your business profile is incomplete. Please complete your business profile</string>
+
+    <string name="pendings">Inquiry</string>
+    <string name="accepted">Accept</string>
+    <string name="current">Booking</string>
+    <string name="rejected">Rejected</string>
+    <string name="completed">Completed</string>
+    <string name="rejected1">Reject</string>
+    <string name="completed1">Complete</string>
+    <string name="trms_acc">Please accept Terms of Use and Privacy Policy</string>
+    <string name="no_reviews_found">No Reviews Found</string>
+    <string name="no_privious_found">No Privious work Found</string>
+    <string name="create_account">Create Kamaii Partner Account</string>
+    <string name="all_categories">All Categories</string>
+    <string name="all_sub_categories">All Sub Categories</string>
+    <string name="all_sub__level_categories">All Sub Level Categories</string>
+    <string name="all_service_name">All Service Name</string>
+    <string name="no_cate_found">No Category Found</string>
+    <string name="no_sub_cate_found">No Sub Category Found</string>
+    <string name="no_sub_cate_level_found">No Sub Level Category Found</string>
+    <string name="no_service_name_found">No Service Name Found</string>
+    <string name="no_rate_found">No Data Found</string>
+    <string name="select_category">Select Business Category</string>
+    <string name="select_subcategory">Select Sub Category</string>
+    <string name="select_sublevelcategory">Select Sub Level Category</string>
+    <string name="select_description">Select Description</string>
+    <string name="select_sname">Select Service Name</string>
+    <string name="select_rate">Select Rate</string>
+    <string name="select_invoice_id">Select Invoice Id</string>
+    <string name="contact">Help</string>
+
+    <string name="tap_to_select_date">Tap to select date and time</string>
+    <string name="resend_msg">Resend OTP?</string>
+    <string name="wamsgone">Thanks for advance. Your number is referred by *</string>
+    <string name="documentmsg">Thanks for contacting us! We will be in touch with you shortly.\n\n
+
+While we do our best to answer your queries quickly, it may take about 2 working days to receive a response from us during peak hours.\n\n
+
+Thanks in advance for your patience.\n\n
+
+Have a great day!</string>
+
+
+    <string name="wamsgtwo">*. I am using Kamaii Partner Application which has provided multiple services such as:\n\n
+1. Cab Booking\n
+2. Rickshaw Booking\n
+3. Kirana Delivery\n
+4. Ghar Ka Bana Tiffin (Gujarati Thali, Panjabi Thali, Kathiyawdi Thali, Rajstani Thali)\n
+5. Electrician\n
+6. Plumber\n
+7. Pedal Cycle\n
+8. Photography\n
+Etc .\n\nBy using this application you do not need to go any other place, this is our one and only platform which provides multiple range of services at a one place.
+ \n\n*Download Customer Application:\nhttps://play.google.com/store/apps/details?id=com.kamaii.customer* \n\nThanks \n *Kamaii*</string>
+    <string name="basic_business_information">Basic Business Information</string>
+    <!--
+    
+    <string name="api_key">AIzaSyAtGjxgk1hivhQaWBzF7oD5JJ2cviFXusk</string>
+    <string name="api_key">AIzaSyA8TzVEucb3uuN0qO_bIeICWHANVCR3ZyY</string>
+-->
+    <string name="api_key">AIzaSyCIpO2XuPQr8HDOg92EU0pRkP0G9rKvFoY</string>
+    <string name="whatsup_msg2">\n </string>
+    <string name="whatsup_msg3">and Register Number:</string>
+    <string name="whatsup_msg4">\nI am waiting for approval. Please check my status?</string>
+
+
+    <string name="title_activity_contact_list">ContactListActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_basic_info">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="name">Name</string>
+    <string name="navigation">Navigatiopasswordn</string>
+    <string name="password">Password</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="get_help">Get Help</string>
+    <string name="bank_documentation">Bank Documentation</string>
+    <string name="bank_information">Bank Information</string>
+    <string name="cancel_cheque_copy">Cancel Cheque Copy</string>
+    <string name="add_services">Add Services</string>
+    <string name="demo_trial">Demo Booking</string>
+    <string name="auto">Auto</string>
+    <string name="manual">Manual</string>
+    <string name="crop_your_document">Crop Your Document</string>
+    <string name="done">Done</string>
+    <string name="email">Email</string>
+    <string name="click_to_live_chat_on_whatsapp">Click to live chat on WhatsApp</string>
+    <string name="click_here_to_drop_on_email">Click here to drop on email</string>
+    <string name="click_here_to_call">Click here to call</string>
+    <string name="hello_kamaii">Hello, Kamaii</string>
+    <string name="you_are_few_step_away_from_comleting_your_profile">You are few step away from completing your profile</string>
+    <string name="personal_documentation">Personal Documentation</string>
+    <string name="business_documentation">Business Documentation</string>
+    <string name="training_center">Training Center</string>
+    <string name="submit_for_approval">Submit for Approval</string>
+    <string name="find_your_friends_at_kamaii_partner">Find Your Friends at Kamaii Partner</string>
+    <string name="checkout_which_of_your_contact_are_register_as_a_kamaii_partner">Checkout which of your contact are register as a Kamaii Partner</string>
+    <string name="enter_your_mobile_number_to_continue_with_kamaii">Enter Your Mobile Number to Continue With Kamaii</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="register_now">Register Now</string>
+    <string name="quantity">Quantity</string>
+    <string name="kamaii">Kamaii</string>
+    <string name="submit_review">Submit Review</string>
+    <string name="enter_bank_name">Enter Bank Name</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="enter_beneficiary_name">Enter Name</string>
+    <string name="beneficiary_name">Name</string>
+    <string name="enter_account_number">Enter Account Number</string>
+    <string name="account_number">Account Number</string>
+    <string name="enter_ifsc_code">Enter IFSC Code</string>
+    <string name="ifsc_code">IFSC CODE</string>
+    <string name="enter_branch">Enter Branch</string>
+    <string name="branch">Branch</string>
+    <string name="enter_reference_name_and_number">Enter Reference Name</string>
+    <string name="enter_car_number">Enter Car Number</string>
+    <string name="search_referred_friend">Search referred friend</string>
+    <string name="quick_chat">Quick Chat</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="profile_not_approved">Profile Not Approved</string>
+    <string name="your_profile_is_not_approved_by_admin_please_contact_to_admin">Your Profile is not approved by admin , please contact to admin</string>
+    <string name="upload_documents">Upload Documents</string>
+    <string name="partner_number">Vehicle Number</string>
+    <string name="confirmation_photo">Confirmation Photo</string>
+    <string name="please_enter_reason">Please Enter Reason</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="write_a_review">Write a review</string>
+    <string name="help">Help</string>
+    <string name="today_earning">Today`s Earning</string>
+    <string name="language">Language</string>
+    <string name="join_our_kamaii_partner">Join our Kamaii!</string>
+    <string name="welcome_to_kamaii">Welcome to Kamaii</string>
+    <string name="hello_nice_to_meet_you">Hello, nice to meet you!</string>
+    <string name="phone_number_verification">Phone Number Verification</string>
+    <string name="please_enter_the_otp">Please enter the OTP</string>
+    <string name="sent_to_your_registered_mobile_number">sent to your registered mobile number</string>
+    <string name="didn_t_receive_the_otp">Didn\'t receive the OTP?</string>
+    <string name="searching_for_booking">Searching for Booking</string>
+    <string name="you_re_offline">You\'re Offline</string>
+    <string name="you_re_online">You\'re Online</string>
+    <string name="training_amp_benefit">Training &amp; Benefit</string>
+    <string name="create_kamaii_account">Create Kamaii Partner Account</string>
+    <string name="by_creating_an_account_you_agree_to_our">By creating an account, you agree to our</string>
+    <string name="total_refer">Total Refer</string>
+    <string name="today_s_payment">Today\'s Payment</string>
+    <string name="share_profile">share Profile</string>
+    <string name="share_services">share services</string>
+    <string name="service_txt">My Service and Shipping</string>
+    <string name="flexible_time_self_assign_rider">Flexible Time Self Assign Rider</string>
+    <string name="update_service_type">Update Service Type</string>
+    <string name="launch_activity">Launch Activity</string>
+    <string name="remove_location_updates">Remove Location Update</string>
+    <string name="location_updated">location updated</string>
+    <string name="demo_booking_category">Demo Booking Category</string>
+    <string name="location_services1">Use your Location</string>
+    <string name="enable_location_services">Enable Location Services</string>
+    <string name="location_screen_txt1">Kamaii Partner will use location in the background to vehicle running, bike rider and partner location on a map.
+
+
+    </string>
+    <string name="location_screen_txt2">
+       To see the maps for automatically tracked activities, allow Kamaii Partner to use location.</string>
+
+
+    <string name="business_info_playlist_txt">Opportunity is everywhere</string>
+    <string name="business_info_playlist_txt2">Get more out of your business, without losing focus on what is most important</string>
+    <string name="aadhar_card">Aadhar Card</string>
+    <string name="pan_card">Pan Card</string>
+    <string name="submit_documents">submit Documents</string>
+    <string name="driving_licence">Driving Licence</string>
+    <string name="vehicle_permit">Vehicle Permit</string>
+    <string name="police_verification">Police Verification</string>
+    <string name="selfie_with_vehicle_photo">Selfie with Vehicle Photo</string>
+    <string name="owner_photo">Owner Photo</string>
+    <string name="selfie_with_photo">Selfie With Photo</string>
+    <string name="choose_booking">Choose Booking</string>
+    <string name="daily_city">Daily City</string>
+    <string name="local_rental">Local Rental</string>
+    <string name="out_station">Out Station</string>
+    <string name="prime_car_suv_7_seater">Prime Car (SUV 7 Seater)</string>
+    <string name="vehicle_insurance">Vehicle Insurance</string>
+    <string name="choose_model_name">Choose Model Name</string>
+    <string name="vehicle_rc_book">Vehicle RC Book</string>
+    <string name="vehicle_information">Vehicle Information</string>
+    <string name="vehicle_category">Vehicle Category</string>
+    <string name="vehicle_number">Vehicle Number</string>
+
+    <string name="total_category_txt">My Category</string>
+    <string name="total_item_txt">My Services</string>
+
+    <string name="my_location">My Location</string>
+    <string name="current_location">Fix Location</string>
+    <string name="live_location">Live Location</string>
+    <string name="minimum_order_price">Minimum Order Price</string>
+    <string name="shipping_information">Shipping Information</string>
+    <string name="set_order_price">Set Order Price</string>
+
+    <string name="house_no_society_name">House No. / Society Name</string>
+    <string name="covid_19_txt1">Safety precautions during COVID-19</string>
+    <string name="covid_19_txt2">We\'re taking additional steps and precautionary measures to protect our community from COVID-19</string>
+    <string name="know_more">Know More</string>
+    <string name="self_shipping">Self Shipping</string>
+    <string name="profile_visit_txt">Profile Visits</string>
+    <string name="total_item_visit_txt">Service Visit</string>
+    <string name="rider">Kamaii Rider</string>
+    <string name="house_no_validate">Enter House No / Society Name</string>
+
+    <string name="personal_info">Personal Information</string>
+    <string name="maximum_km_or_qty">Set Maximum Qty</string>
+    <string name="guide">Contac</string>
+    <string name="add_business_photo">Add Business Photo</string>
+    <string name="share">Share Business Card</string>
+    <string name="birthday_share">Wish Your Friend</string>
+    <string name="birthday_card">Birthday Card</string>
+    <string name="applay_btn">Apply</string>
+
+    <string name="select_business_card">Select Business Card</string>
+    <string name="select_birthday_card">Select Birthday Card</string>
+
+    <string name="finish_order">Finish Order</string>
+    <string name="start_order">Start Preparation</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="drop_location">Drop Location</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="waiting_for_rider_time">Waiting for Rider </string>
+    <string name="home">Home</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="thanks_for_using_kamaii">Thank You!</string>
+    <string name="share_image">Share</string>
+    <string name="business_address">Business Address</string>
+    <string name="my_business_profile">My Business Profile</string>
+    <string name="val_select_category">Please select Category.</string>
+
+    <string name="val_select_subcatogry">Please select Sub Category.</string>
+    <string name="basic_info_location">Select Your Location</string>
+    <string name="job_comleted">Order Completed</string>
+    <string name="placekey">AIzaSyD1JNWPP3foP5TM8mYiquIPfgmYDAOSV_g</string>
+    <string name="select_an_address">Select Your Address</string>
+    <string name="search_destination">Add Address</string>
+    <string name="houseno">House no. / Flat no. / Floor / Building</string>
+    <string name="enter_society_name">Landmark / Entry Gate / Street</string>
+    <string name="confirm_location_amp_proceed">Confirm Location &amp; Proceed</string>
+    <string name="requests_for_rider">Requests For Rider</string>
+    <string name="online_services_title">Online Services</string>
+    <string name="pending_orders">Pending Orders</string>
+    <string name="complete_orders">Complete Orders</string>
+    <string name="kamaii_wallet">Kamaii Wallet</string>
+    <string name="request_amount">Request Amount</string>
+    <string name="preparation_time">Preparation Time</string>
+    <string name="your_address">Your Address</string>
+    <string name="add_address">Add Address</string>
+    <string name="confirm_account_number">Confirm Account Number</string>
+    <string name="mymenu">My Menu</string>
+    <string name="bank_doc">Bank &amp; Document Details</string>
+    <string name="select_day">Select Day</string>
+    <string name="terms_condition">Terms and Condition</string>
+    <string name="terms_condition_agree">I agree with the Terms and Condition</string>
+
+
+</resources>
+

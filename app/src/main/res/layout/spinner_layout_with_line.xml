@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.kamaii.partner.utils.CustomTextView
+        android:id="@+id/text1234"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/radioBtn"
+        android:clickable="false"
+        android:focusable="false"
+        android:padding="12dp"
+        android:text=""
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text1"
+        android:layout_toLeftOf="@+id/radioBtn"
+        android:background="@color/light_gray"
+        android:padding="12dp" />
+
+    <RadioButton
+        android:id="@+id/radioBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

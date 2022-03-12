@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_10">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/new_order_first_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="@dimen/dimen_5dp">
+
+            <RelativeLayout
+                android:id="@+id/order_main_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1.5dp"
+                android:background="@drawable/green_border_bg">
+
+                <RelativeLayout
+                    android:id="@+id/timer_relative_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/curved_top_5dp_bg"
+                    android:backgroundTint="@color/light_green_bg"
+                    android:padding="@dimen/margin_10">
+
+                    <ImageView
+                        android:id="@+id/clock_123_first"
+                        android:layout_width="@dimen/pad_20"
+                        android:layout_height="@dimen/pad_20"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_payment_done_green" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/clock_123_first"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:paddingRight="@dimen/margin_10">
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/order_status_first"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Order Completed"
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="@dimen/dp_14" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+                <View
+                    android:id="@+id/temp_view1_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/green"
+                    android:layout_below="@+id/timer_relative_first"/>
+
+
+                <LinearLayout
+                    android:id="@+id/order_details_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/temp_view1_first"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingTop="@dimen/margin_10"
+                    android:paddingRight="@dimen/margin_10"
+                    android:paddingBottom="@dimen/margin_10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/order_id_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Order ID : "
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="@dimen/dp_14" />
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/order_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/order_id_title"
+                            android:text="#0824"
+                            android:textColor="@color/pink_color"
+                            android:textSize="@dimen/dp_14" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/order_details_time_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Order Date &amp; Time : "
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="@dimen/dp_14" />
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/order_details_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/order_details_time_title"
+                            android:text="#0824"
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="@dimen/dp_14" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/delivery_date_time_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery Date &amp; Time : "
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="@dimen/dp_14" />
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/delivery_date_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/delivery_date_time_title"
+                            android:text="#0824"
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="@dimen/dp_14" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/temp_view6_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/order_details_linear"
+                    android:background="@color/gray_wallet" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/order_details_cart_rv_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/temp_view6_first"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/margin_10" />
+
+                <View
+                    android:id="@+id/temp_view2_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/order_details_cart_rv_first"
+                    android:visibility="gone"
+                    android:background="@drawable/dashed_view_line" />
+
+                <RelativeLayout
+                    android:id="@+id/total_pay_relative_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="-1dp"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginBottom="-1dp"
+                    android:background="@drawable/dashed_view_line"
+                    android:layout_below="@+id/temp_view2_first"
+                    >
+
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#0CADADAD"
+                        android:padding="@dimen/margin_10"
+                        android:text="Order Payment"
+                        android:textColor="@color/dark_blue_color"
+                        android:textSize="@dimen/dp_14" />
+                    <com.kamaii.partner.utils.CustomTextViewBold
+                        android:id="@+id/total_payment_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:textSize="@dimen/dp_14"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/dark_blue_color"/>
+                </RelativeLayout>
+                <View
+                    android:id="@+id/temp_view3_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:visibility="gone"
+                    android:background="@drawable/dashed_view_line"
+                    android:layout_below="@+id/total_pay_relative_first"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>

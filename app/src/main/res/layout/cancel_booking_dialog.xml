@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_curved_background"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/laytitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_blue_color">
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/ctvbTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:padding="@dimen/margin_10"
+                android:text="Confirmation of Pass Order?"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin_10"
+                android:visibility="gone"
+                android:src="@drawable/close" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/laytitle"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="@dimen/pad_20"
+            android:orientation="vertical">
+
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/cancel_booking_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cancellation charges will applay"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:textSize="@dimen/pad_20"
+                android:textColor="@color/dark_blue_color"
+                android:padding="@dimen/margin_10"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l1"
+            android:layout_marginLeft="@dimen/pad_20"
+            android:layout_marginRight="@dimen/pad_20"
+            android:layout_marginBottom="@dimen/dimen_30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/cancelbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@drawable/dark_blue_btn_bg"
+                android:gravity="center"
+                android:text="No"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/confirmbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/upload_img_btn"
+                android:gravity="center"
+                android:text="Confirm"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btnlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scroll"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</layout>

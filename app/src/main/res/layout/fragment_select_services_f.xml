@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFB"
+    tools:context=".ui.fragment.SelectServicesFragment">
+
+    <RelativeLayout
+        android:id="@+id/share_services_child_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:padding="@dimen/margin_10"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/custom_relative_curved_background">
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select All"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_16" />
+
+        <CheckBox
+            android:id="@+id/select_all_checkbox"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_centerVertical="true"
+            android:button="@drawable/customcheckbox"
+            android:checked="false"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/select_services_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/share_btn"
+        android:layout_below="@+id/share_services_child_relative"
+        android:layout_weight="1"
+        android:background="#F8FAFB"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_10">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/share_service_recyclerviw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:verticalSpacing="@dimen/margin_10"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:background="#F8FAFB">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/share_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Share"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="-5dp"
+        android:backgroundTint="#36C5F0"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size_16"/>
+</RelativeLayout>

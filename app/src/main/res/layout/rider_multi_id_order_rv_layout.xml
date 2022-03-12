@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/order_id_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:paddingLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/dimen_5dp">
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/dp_14"
+                android:text="Order Id : "/>
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pink_color"
+                android:textSize="@dimen/dp_16"
+                android:text="#08976"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/temp_view2_rider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D2D2D2"
+            android:layout_below="@+id/order_id_linear"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_rv_rider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp_view2_rider"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/white"
+            android:paddingTop="@dimen/margin_10" />
+
+        <View
+            android:id="@+id/temp_view3_rider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/cart_rv_rider"
+            android:visibility="gone"
+            android:background="@drawable/dashed_view_line" />
+
+        <RelativeLayout
+            android:id="@+id/total_pay_relative_rider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:paddingRight="2dp"
+            android:layout_marginBottom="@dimen/pad_15"
+            android:background="@drawable/dashed_view_line"
+            android:layout_below="@+id/temp_view3_rider"
+            >
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0CADADAD"
+                android:padding="@dimen/margin_10"
+                android:text="Total Order Payment"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/dp_14" />
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/total_payment_rider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_10"
+                android:textSize="@dimen/dp_14"
+                android:layout_centerVertical="true"
+                android:textColor="@color/dark_blue_color"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

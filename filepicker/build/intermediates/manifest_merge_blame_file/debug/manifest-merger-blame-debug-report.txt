@@ -1,0 +1,88 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.webknight.filemanager"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:3:5-81
+11-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:3:22-78
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:4:5-80
+12-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:4:22-77
+13
+14    <application
+14-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:6:5-40:19
+15        android:allowBackup="true"
+15-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:7:9-35
+16        android:supportsRtl="true" >
+16-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:8:9-35
+17        <activity
+17-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:10:9-13:57
+18            android:name="com.webknight.filemanager.activity.ImagePickActivity"
+18-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:11:13-55
+19            android:screenOrientation="portrait"
+19-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:12:13-49
+20            android:theme="@style/vw_FilePickerTheme" />
+20-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:13:13-54
+21        <activity
+21-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:15:9-18:51
+22            android:name="com.webknight.filemanager.activity.ImageBrowserActivity"
+22-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:15:19-64
+23            android:hardwareAccelerated="false"
+23-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:18:13-48
+24            android:screenOrientation="portrait"
+24-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:16:13-49
+25            android:theme="@style/vw_FilePickerTheme" />
+25-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:17:13-54
+26        <activity
+26-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:20:9-22:57
+27            android:name="com.webknight.filemanager.activity.VideoPickActivity"
+27-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:20:19-61
+28            android:screenOrientation="portrait"
+28-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:21:13-49
+29            android:theme="@style/vw_FilePickerTheme" />
+29-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:22:13-54
+30        <activity
+30-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:24:9-26:57
+31            android:name="com.webknight.filemanager.activity.AudioPickActivity"
+31-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:24:19-61
+32            android:screenOrientation="portrait"
+32-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:25:13-49
+33            android:theme="@style/vw_FilePickerTheme" />
+33-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:26:13-54
+34        <activity
+34-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:28:9-30:57
+35            android:name="com.webknight.filemanager.activity.NormalFilePickActivity"
+35-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:28:19-66
+36            android:screenOrientation="portrait"
+36-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:29:13-49
+37            android:theme="@style/vw_FilePickerTheme" />
+37-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:30:13-54
+38
+39        <provider
+39-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:31:9-39:20
+40            android:name="androidx.core.content.FileProvider"
+40-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:32:13-62
+41            android:authorities="${applicationId}.provider"
+41-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:33:13-60
+42            android:exported="false"
+42-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:34:13-37
+43            android:grantUriPermissions="true" >
+43-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:35:13-47
+44            <meta-data
+44-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:36:13-38:54
+45                android:name="android.support.FILE_PROVIDER_PATHS"
+45-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:37:17-67
+46                android:resource="@xml/file_paths" />
+46-->D:\raj\Kamaii Partner Test\filepicker\src\main\AndroidManifest.xml:38:17-51
+47        </provider>
+48    </application>
+49
+50</manifest>

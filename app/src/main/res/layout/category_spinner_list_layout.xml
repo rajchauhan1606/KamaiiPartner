@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:clickable="false"
+    android:paddingTop="@dimen/dimen_5dp"
+    android:paddingBottom="@dimen/dimen_5dp"
+    android:paddingRight="@dimen/dimen_5dp"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/spinner_item_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/dafault_product"/>
+
+    <com.kamaii.partner.utils.CustomTextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:clickable="false"
+        android:paddingLeft="@dimen/dimen_5dp"
+        android:layout_toRightOf="@+id/spinner_item_image"
+        android:padding="12dp"
+        android:textColor="@color/dark_blue_color"
+        android:text=""
+        android:textSize="18sp" />
+    <com.kamaii.partner.utils.CustomTextView
+        android:visibility="gone"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_alignParentLeft="true"
+        android:padding="12dp"
+        android:layout_toLeftOf="@+id/radioBtn"
+        android:text=""
+        android:textSize="18sp" />
+    <RadioButton
+        android:id="@+id/radioBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:clickable="false"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center" />
+
+
+</RelativeLayout>

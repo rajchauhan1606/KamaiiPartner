@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.kamaii.partner.utils.CustomTextView
+        android:id="@+id/reason_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_blue_color"
+        android:textSize="@dimen/text_16"
+        android:padding="@dimen/dimen_5dp"
+        android:layout_toLeftOf="@id/cancell_reason_checkbox"/>
+    <CheckBox
+        android:id="@+id/cancell_reason_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:button="@drawable/custom_checkbox"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

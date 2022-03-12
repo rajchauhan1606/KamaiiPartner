@@ -1,0 +1,83 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="text_size_s">16sp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="dialog_back">280dp</dimen>
+
+    <dimen name="item_padding">4dp</dimen>
+
+    <dimen name="spacing_xlarge">24dp</dimen>
+    // text size
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+
+
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+    <dimen name="dimen_1dp">1dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+
+
+    <!-- Menu -->
+
+    <!-- Grid View -->
+
+    <!-- Newly Added for Register Screen -->
+
+    <!-- Newly Added for Forgot Password -->
+
+    <!-- Newly Added for Cutstome ActionBar -->
+
+    <!-- Newly Added for SignIn -->
+
+    <!-- Newly Added for job -->
+
+    <!-- Newly Added for font size -->
+
+    <!-- Newly Added For Map Screen -->
+
+    <!-- Newly Added For History Item -->
+
+    <!-- Newly Added For Sign in Screen -->
+
+    <!-- Newly Added for Profile Screen -->
+
+    <!-- Newly Added for Feedback Screen -->
+
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+
+
+    <dimen name="pad_15">15dp</dimen>
+    <dimen name="pad_20">20dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+
+    <dimen name="text_16">16sp</dimen>
+
+
+    <dimen name="dp_48">48dp</dimen>
+
+
+    <dimen name="size_48">48dp</dimen>
+
+
+    <dimen name="item_padding_8">8dp</dimen>
+    <dimen name="dimen_35dp">35dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_30dp">30dp</dimen>
+    <dimen name="dimen_80dp">80dp</dimen>
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">150dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="dimen_45dp">45dp</dimen>
+
+</resources>

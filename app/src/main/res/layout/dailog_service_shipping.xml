@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="@dimen/dimen_5dp"
+        card_view:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/tvtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_toLeftOf="@+id/close_ship_dialog"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/margin_10"
+                            android:text=""
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/close_ship_dialog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dimen_12dp"
+                            android:src="@drawable/ic_close" />
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/margin_10">
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/mylocation_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/my_location"
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="15sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/current_location_relative"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:id="@+id/current_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_toLeftOf="@+id/current_check"
+                                android:ellipsize="end"
+                                android:gravity="left|center_vertical"
+                                android:text="@string/current_location"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="15sp" />
+
+                            <CheckBox
+                                android:id="@+id/current_check"
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:checked="true"
+                                android:layout_alignParentRight="true"
+                                android:button="@drawable/custom_checkbox" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/enterlocationlinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_marginRight="20dp">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:id="@+id/shipping_your_location_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/your_location"
+                                android:textSize="@dimen/dp_16" />
+
+
+                            <com.kamaii.partner.utils.CustomTextViewBold
+                                android:id="@+id/shipping_etLocationD"
+                                android:drawableRight="@drawable/ic_placeholder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/margin_10"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="@dimen/text_size_16"
+                                android:layout_marginTop="5dp"/>
+
+                            <com.kamaii.partner.utils.CustomEditText
+                                android:id="@+id/shipping_ed_society"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/house_no_society_name"
+                                android:inputType="textCapWords"
+                                android:singleLine="true"
+                                android:visibility="gone"
+                                android:text="" />
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:id="@+id/my_location_relative"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:id="@+id/my_l"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_toLeftOf="@+id/live_check"
+                                android:gravity="left|center_vertical"
+                                android:text="@string/live_location"
+                                android:textColor="@color/dark_blue_color"
+                                android:textSize="15sp" />
+
+                            <CheckBox
+                                android:id="@+id/live_check"
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:button="@drawable/custom_checkbox" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:background="#19969696"
+                            android:paddingTop="@dimen/margin_10"
+                            android:paddingBottom="3dp"
+                            android:visibility="visible" />
+
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/shipping_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:ellipsize="end"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/shipping_information"
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/radioButton_shipping"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.kamaii.partner.utils.CustomTextView
+                                    android:id="@+id/shipping_txt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:layout_toLeftOf="@+id/shipping_check"
+                                    android:ellipsize="end"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/self_shipping"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="15sp" />
+
+                                <CheckBox
+                                    android:id="@+id/shipping_check"
+                                    android:layout_width="26dp"
+                                    android:layout_height="26dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="15dp"
+                                    android:button="@drawable/custom_checkbox" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/radioButton_rider"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.kamaii.partner.utils.CustomTextView
+                                    android:id="@+id/rider_txt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:layout_toLeftOf="@+id/rider_check"
+                                    android:ellipsize="end"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/rider"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="15sp" />
+
+                                <CheckBox
+                                    android:id="@+id/rider_check"
+                                    android:layout_width="26dp"
+                                    android:layout_height="26dp"
+                                    android:checked="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="13dp"
+                                    android:button="@drawable/custom_checkbox" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/radioButton_flexible"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.kamaii.partner.utils.CustomTextView
+                                    android:id="@+id/flexible_txt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:layout_toLeftOf="@+id/flexible_check"
+                                    android:ellipsize="end"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/flexible_time_self_assign_rider"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="15sp" />
+
+                                <CheckBox
+                                    android:id="@+id/flexible_check"
+                                    android:layout_width="26dp"
+                                    android:layout_height="26dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="13dp"
+                                    android:button="@drawable/custom_checkbox" />
+
+                            </RelativeLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:checkedButton="@+id/radioButton_shipping">
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen_5dp"
+                                    android:backgroundTint="@color/dark_blue_color"
+                                    android:button="@null"
+                                    android:buttonTint="@color/dark_blue_color"
+                                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                                    android:drawableTint="@color/dark_blue_color"
+                                    android:gravity="center_vertical"
+                                    android:layoutDirection="rtl"
+                                    android:paddingLeft="2dp"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="15sp"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/gray"
+                                    android:visibility="gone" />
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen_5dp"
+                                    android:background="?android:selectableItemBackground"
+                                    android:button="@null"
+                                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                                    android:drawableTint="@color/dark_blue_color"
+                                    android:gravity="left|center_vertical"
+                                    android:layoutDirection="rtl"
+                                    android:paddingLeft="2dp"
+                                    android:text="Rider"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="15sp"
+                                    android:visibility="gone" />
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="@dimen/dimen_5dp"
+                                    android:background="?android:selectableItemBackground"
+                                    android:button="@null"
+                                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                                    android:drawableTint="@color/dark_blue_color"
+                                    android:gravity="left|center_vertical"
+                                    android:layoutDirection="rtl"
+                                    android:paddingLeft="2dp"
+                                    android:visibility="gone"
+                                    android:text="@string/flexible_time_self_assign_rider"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/dark_blue_color"
+                                    android:textSize="15sp" />
+                            </RadioGroup>
+                            <!--  <com.kamaii.partner.utils.CustomTextViewBold
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_weight="0.5"
+                                  android:gravity="left"
+                                  android:text="Shipping/Pickup/Visiting"
+                                  android:textColor="@color/colorPrimaryDark"
+                                  android:textSize="14sp" />
+                              <CheckBox
+                                  android:backgroundTint="@color/colorPrimary"
+                                  android:id="@+id/mylocation"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_alignParentRight="true"
+                                  android:checked="true" />-->
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:background="#19969696"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:visibility="visible" />
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/min_price_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:ellipsize="end"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/minimum_order_price"
+                            android:textColor="@color/dark_blue_color"
+                            android:textSize="15sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/max_item_relative"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:orientation="horizontal">
+
+                            <com.kamaii.partner.utils.CustomTextView
+                                android:id="@+id/max_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/edt_s_price"
+                                android:text="@string/set_order_price"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+
+                            <com.kamaii.partner.utils.CustomEditText
+                                android:id="@+id/edt_s_price"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/pad_15"
+                                android:background="@drawable/edittext_underline"
+                                android:gravity="center_horizontal"
+                                android:inputType="number"
+                                android:text="Enter Price"
+                                android:textColor="@color/pink_color"
+                                android:textCursorDrawable="@color/dark_blue_color"
+                                android:textSize="@dimen/text_size_16"></com.kamaii.partner.utils.CustomEditText>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="@dimen/dimen_30dp"
+                        android:paddingRight="50dp"
+                        android:paddingBottom="30dp">
+
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/tvNoedit"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="@string/cancel1"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+
+                        <com.kamaii.partner.utils.CustomTextViewBold
+                            android:id="@+id/tvYesPro"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/pink_drawable"
+                            android:gravity="center"
+                            android:text="Submit"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

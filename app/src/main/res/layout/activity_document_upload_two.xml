@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/profile_background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/action_bar_menus2"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:src="@drawable/back"
+                android:tint="#173143" />
+
+        </LinearLayout>
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/basic_information"
+            android:textColor="#173143"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/logout_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logout_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_10"/>
+    </RelativeLayout>
+
+    <com.kamaii.partner.utils.CustomTextViewBold
+        android:id="@+id/laymsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar_menus2"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_weight="1"
+        android:background="@drawable/custom_button_white_curved"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10"
+        android:text="@string/documentmsg"
+        android:textColor="@color/green">
+
+    </com.kamaii.partner.utils.CustomTextViewBold>
+
+    <LinearLayout
+        android:id="@+id/laychat123"
+        android:background="@drawable/button_pressed_arrpove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/laymsg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:visibility="gone">
+
+
+
+        <ImageView
+            android:padding="3dp"
+            android:layout_gravity="center"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/chat"></ImageView>
+
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/quick_chat"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/help_chat_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laymsg"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/cardchat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/laymsg"
+            android:background="@drawable/buttonroundhelp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/whatsupchat" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/click_to_live_chat_on_whatsapp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold">
+
+            </com.kamaii.partner.utils.CustomTextViewBold>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardemail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonroundhelp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/cardchat"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cemail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="support@kamaii.in"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold">
+
+                </com.kamaii.partner.utils.CustomTextViewBold>
+
+                <com.kamaii.partner.utils.CustomTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_here_to_drop_on_email"
+                    android:textSize="14dp">
+
+                </com.kamaii.partner.utils.CustomTextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardcall"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cardemail"
+            android:background="@drawable/buttonroundhelp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ccall" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9909998404"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold">
+
+                </com.kamaii.partner.utils.CustomTextViewBold>
+
+                <com.kamaii.partner.utils.CustomTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_here_to_call"
+                    android:textSize="14dp">
+
+                </com.kamaii.partner.utils.CustomTextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/youtube_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        app:cardBackgroundColor="#F2F2F4"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        android:layout_below="@+id/help_chat_linear">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circuler_relative_background"
+            android:backgroundTint="@color/white"
+            android:padding="@dimen/margin_10">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/friends_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_friends_at_kamaii_partner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/friends_icon"
+                android:orientation="vertical">
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:id="@+id/friends_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/friends_icon"
+                    android:text="@string/business_info_playlist_txt"
+                    android:textSize="14dp" />
+
+                <com.kamaii.partner.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:text="@string/business_info_playlist_txt2"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/form_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar_menus2"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="43dp"
+
+            android:background="@color/profile_background"
+            android:orientation="vertical"
+            android:paddingBottom="90dp">
+
+
+            <RelativeLayout
+                android:id="@+id/sub_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:backgroundTint="#F2F2F4">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10"
+                    app:cardBackgroundColor="#F2F2F4"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/circuler_relative_background"
+                        android:backgroundTint="@color/white">
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/add_profile_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_user_placeholder"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp"
+                    app:civ_fill_color="#f2f2f3"
+                    />
+
+                <com.kamaii.partner.utils.CustomTextViewBold
+                    android:id="@+id/artist_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_profile_pic"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="@string/hello_kamaii"
+                    android:textSize="14dp" />
+
+                <com.kamaii.partner.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/artist_name"
+                    android:layout_marginLeft="@dimen/pad_20"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/you_are_few_step_away_from_comleting_your_profile"
+                    android:textSize="12dp" />
+
+                <RelativeLayout
+                    android:id="@+id/helppage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/add_profile_pic"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginRight="27dp"
+                    android:background="@drawable/curved_relative_border"
+                    android:paddingLeft="@dimen/pad_15"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:paddingRight="@dimen/pad_15"
+                    android:paddingBottom="@dimen/dimen_5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/get_help"
+                        android:textSize="@dimen/dp_16" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/select_category"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:background="@drawable/custom_button_white_curved"
+                android:drawableLeft="@drawable/ic__one"
+                android:drawableRight="@drawable/ic_arrow"
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/select_category"
+                android:textColor="@color/profile_texting" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/document_up_two_txt"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:background="@drawable/custom_button_white_curved"
+                android:drawableLeft="@drawable/ic_two"
+                android:drawableRight="@drawable/ic_arrow"
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/basic_business_information"
+                android:textColor="@color/profile_texting" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/personal_doc"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:background="@drawable/custom_button_white_curved"
+                android:drawableLeft="@drawable/ic__three"
+                android:drawableRight="@drawable/ic_arrow"
+
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:paddingLeft="15dp"
+
+                android:paddingRight="15dp"
+                android:text="@string/personal_documentation"
+                android:textColor="@color/profile_texting" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/buiness_doc"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:background="@drawable/custom_button_white_curved"
+                android:drawableLeft="@drawable/ic_four"
+                android:drawableRight="@drawable/ic_arrow"
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/business_documentation"
+                android:textColor="@color/profile_texting" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/training"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:background="@drawable/custom_button_white_curved"
+                android:drawableLeft="@drawable/ic_fifth"
+                android:drawableRight="@drawable/ic_arrow"
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:paddingLeft="15dp"
+                android:visibility="gone"
+                android:paddingRight="15dp"
+                android:text="@string/training_center"
+                android:textColor="@color/profile_texting" />
+
+            <com.kamaii.partner.utils.CustomTextViewBold
+                android:id="@+id/bank_info"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:background="@drawable/custom_button_white_curved"
+                android:drawableLeft="@drawable/ic__six"
+                android:drawableRight="@drawable/ic_arrow"
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:paddingLeft="15dp"
+                android:visibility="gone"
+                android:paddingRight="15dp"
+                android:text="@string/bank_documentation"
+                android:textColor="@color/profile_texting" />
+
+            <com.kamaii.partner.utils.CustomButton
+                android:id="@+id/btnSubmitn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/custom_relative_curved_background2"
+                android:gravity="center"
+                android:text="@string/submit_for_approval"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

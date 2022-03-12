@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_10"
+        >
+
+        <ImageView
+            android:id="@+id/elipse_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_ellipse_2" />
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+            android:id="@+id/slot_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/elipse_img"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="02 PM TO #:00 PM"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="14dp" />
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+            android:id="@+id/dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/slot_time"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:text="------"
+            android:textSize="13dp" />
+
+        <com.kamaii.partner.utils.CustomTextViewBold
+            android:id="@+id/slot_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toRightOf="@+id/dash"
+            android:text="19"
+            android:textColor="@color/pink_color"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+</layout>
